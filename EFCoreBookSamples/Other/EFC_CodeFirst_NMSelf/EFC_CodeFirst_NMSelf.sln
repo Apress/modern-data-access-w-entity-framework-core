@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFC_CodeFirst_NMSelf", "EF_CodeFirst_NMSelf\EFC_CodeFirst_NMSelf.csproj", "{22EC0B2C-EB2A-4E11-BAE0-2BD0F9A4AFAE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22EC0B2C-EB2A-4E11-BAE0-2BD0F9A4AFAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22EC0B2C-EB2A-4E11-BAE0-2BD0F9A4AFAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22EC0B2C-EB2A-4E11-BAE0-2BD0F9A4AFAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22EC0B2C-EB2A-4E11-BAE0-2BD0F9A4AFAE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://it-visions.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = EF_CodeFirst_NMSelf\\EFC_CodeFirst_NMSelf.csproj
+		SccProjectName1 = EF_CodeFirst_NMSelf
+		SccLocalPath1 = EF_CodeFirst_NMSelf
+	EndGlobalSection
+EndGlobal

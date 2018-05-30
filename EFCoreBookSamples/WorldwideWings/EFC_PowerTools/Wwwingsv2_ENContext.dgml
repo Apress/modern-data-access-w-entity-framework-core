@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="LeftToRight" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+<Node Id="IModel" Label="Wwwingsv2_ENContext" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot" PropertyAccessMode="PropertyAccessMode.Default" ProductVersion="2.0.1-rtm-125" Annotations="SqlServer:ValueGenerationStrategy: IdentityColumn" Category="Model" Group="Expanded" />
+<Node Id = "AircraftType" Label="AircraftType" Name="AircraftType" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="Relational:TableName: AircraftType
+RelationshipDiscoveryConvention:NavigationCandidates: System.Collections.Immutable.ImmutableSortedDictionary`2[System.Reflection.PropertyInfo,System.Type]" Category="EntityType" Group="Expanded" />
+<Node Id = "AircraftTypeDetail" Label="AircraftTypeDetail" Name="AircraftTypeDetail" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="Relational:TableName: AircraftTypeDetail
+RelationshipDiscoveryConvention:NavigationCandidates: System.Collections.Immutable.ImmutableSortedDictionary`2[System.Reflection.PropertyInfo,System.Type]" Category="EntityType" Group="Expanded" />
+<Node Id = "AircraftType.TypeId" Label="TypeId" Name="TypeId" Category="Property Primary" Type="byte" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:ColumnName: TypeID
+Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.ByteTypeMapping" IsPrimaryKey="True" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "AircraftType.AircraftTypeDetail" Label="AircraftTypeDetail (1)" Name="AircraftTypeDetail" Category="Navigation Property" Type="AircraftTypeDetail"  Field="&lt;AircraftTypeDetail&gt;k__BackingField" Dependent="AircraftTypeDetail" Principal="" Inverse="AircraftType" />
+<Node Id = "AircraftType.Flight" Label="Flight (*)" Name="Flight" Category="Navigation Collection" Type="ICollection&lt;Flight&gt;"  Field="&lt;Flight&gt;k__BackingField" Dependent="Flight" Principal="" Inverse="AircraftType" />
+<Node Id = "AircraftType.Manufacturer" Label="Manufacturer" Name="Manufacturer" Category="Property Optional" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerStringTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "AircraftType.Name" Label="Name" Name="Name" Category="Property Optional" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerStringTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Airline" Label="Airline" Name="Airline" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="Relational:TableName: Airline
+RelationshipDiscoveryConvention:NavigationCandidates: System.Collections.Immutable.ImmutableSortedDictionary`2[System.Reflection.PropertyInfo,System.Type]" Category="EntityType" Group="Expanded" />
+<Node Id = "AircraftTypeDetail.AircraftTypeId" Label="AircraftTypeId" Name="AircraftTypeId" Category="Property Primary" Type="byte" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:ColumnName: AircraftTypeID
+Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.ByteTypeMapping" IsPrimaryKey="True" IsForeignKey="True" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "AircraftTypeDetail.AircraftType" Label="AircraftType (1)" Name="AircraftType" Category="Navigation Property" Type="AircraftType"  Field="&lt;AircraftType&gt;k__BackingField" Dependent="" Principal="AircraftType" Inverse="AircraftTypeDetail" />
+<Node Id = "AircraftTypeDetail.Length" Label="Length" Name="Length" Category="Property Optional" Type="Nullable&lt;float&gt;" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerFloatTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "AircraftTypeDetail.Memo" Label="Memo" Name="Memo" Category="Property Optional" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerStringTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "AircraftTypeDetail.Tare" Label="Tare" Name="Tare" Category="Property Optional" Type="Nullable&lt;short&gt;" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.ShortTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "AircraftTypeDetail.TurbineCount" Label="TurbineCount" Name="TurbineCount" Category="Property Optional" Type="Nullable&lt;byte&gt;" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.ByteTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Booking" Label="Booking" Name="Booking" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="Relational:TableName: Booking
+RelationshipDiscoveryConvention:NavigationCandidates: System.Collections.Immutable.ImmutableSortedDictionary`2[System.Reflection.PropertyInfo,System.Type]" Category="EntityType" Group="Expanded" />
+<Node Id = "Airline.Code" Label="Code" Name="Code" Category="Property Primary" Type="string" MaxLength="3" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="MaxLength: 3
+Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerStringTypeMapping" IsPrimaryKey="True" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Airline.Flight" Label="Flight (*)" Name="Flight" Category="Navigation Collection" Type="ICollection&lt;Flight&gt;"  Field="&lt;Flight&gt;k__BackingField" Dependent="Flight" Principal="" Inverse="AirlineCodeNavigation" />
+<Node Id = "Airline.Name" Label="Name" Name="Name" Category="Property Optional" Type="string" MaxLength="100" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="MaxLength: 100
+Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerStringTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Employee" Label="Employee" Name="Employee" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="Relational:TableName: Employee
+RelationshipDiscoveryConvention:AmbiguousNavigations: System.Collections.Immutable.ImmutableSortedDictionary`2[System.Reflection.PropertyInfo,System.Type]
+RelationshipDiscoveryConvention:NavigationCandidates: System.Collections.Immutable.ImmutableSortedDictionary`2[System.Reflection.PropertyInfo,System.Type]" Category="EntityType" Group="Expanded" />
+<Node Id = "Booking.FlightNo" Label="FlightNo" Name="FlightNo" Category="Property Primary" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" IsPrimaryKey="True" IsForeignKey="True" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Booking.FlightNoNavigation" Label="FlightNoNavigation (1)" Name="FlightNoNavigation" Category="Navigation Property" Type="Flight"  Field="&lt;FlightNoNavigation&gt;k__BackingField" Dependent="" Principal="Flight" Inverse="Booking" />
+<Node Id = "Booking.Passenger" Label="Passenger (1)" Name="Passenger" Category="Navigation Property" Type="Passenger"  Field="&lt;Passenger&gt;k__BackingField" Dependent="" Principal="Passenger" Inverse="Booking" />
+<Node Id = "Booking.PassengerId" Label="PassengerId" Name="PassengerId" Category="Property Primary" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:ColumnName: PassengerID
+Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" IsPrimaryKey="True" IsForeignKey="True" IsRequired="True" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Flight" Label="Flight" Name="Flight" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="Relational:TableName: Flight
+RelationshipDiscoveryConvention:AmbiguousNavigations: System.Collections.Immutable.ImmutableSortedDictionary`2[System.Reflection.PropertyInfo,System.Type]
+RelationshipDiscoveryConvention:NavigationCandidates: System.Collections.Immutable.ImmutableSortedDictionary`2[System.Reflection.PropertyInfo,System.Type]" Category="EntityType" Group="Expanded" />
+<Node Id = "Employee.PersonId" Label="PersonId" Name="PersonId" Category="Property Primary" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:ColumnName: PersonID
+Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" IsPrimaryKey="True" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="ValueGenerated.OnAdd" />
+<Node Id = "Employee.Detail" Label="Detail (1)" Name="Detail" Category="Navigation Property" Type="Persondetail"  Field="&lt;Detail&gt;k__BackingField" Dependent="" Principal="Persondetail" Inverse="Employee" />
+<Node Id = "Employee.FlightCopilot" Label="FlightCopilot (*)" Name="FlightCopilot" Category="Navigation Collection" Type="ICollection&lt;Flight&gt;"  Field="&lt;FlightCopilot&gt;k__BackingField" Dependent="Flight" Principal="" Inverse="Copilot" />
+<Node Id = "Employee.FlightPilot" Label="FlightPilot (*)" Name="FlightPilot" Category="Navigation Collection" Type="ICollection&lt;Flight&gt;"  Field="&lt;FlightPilot&gt;k__BackingField" Dependent="Flight" Principal="" Inverse="Pilot" />
+<Node Id = "Employee.InverseSupervisorPerson" Label="InverseSupervisorPerson (*)" Name="InverseSupervisorPerson" Category="Navigation Collection" Type="ICollection&lt;Employee&gt;"  Field="&lt;InverseSupervisorPerson&gt;k__BackingField" Dependent="Employee" Principal="" Inverse="SupervisorPerson" />
+<Node Id = "Employee.SupervisorPerson" Label="SupervisorPerson (1)" Name="SupervisorPerson" Category="Navigation Property" Type="Employee"  Field="&lt;SupervisorPerson&gt;k__BackingField" Dependent="" Principal="Employee" Inverse="InverseSupervisorPerson" />
+<Node Id = "Employee.Birthday" Label="Birthday" Name="Birthday" Category="Property Optional" Type="Nullable&lt;DateTime&gt;" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerDateTimeTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Employee.DetailId" Label="DetailId" Name="DetailId" Category="Property Foreign" Type="Nullable&lt;int&gt;" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:ColumnName: DetailID
+Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" IsPrimaryKey="False" IsForeignKey="True" IsRequired="False" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Employee.Discriminator" Label="Discriminator" Name="Discriminator" Category="Property Required" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerStringTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Employee.Email" Label="Email" Name="Email" Category="Property Optional" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:ColumnName: EMail
+Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerStringTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Employee.FlightHours" Label="FlightHours" Name="FlightHours" Category="Property Optional" Type="Nullable&lt;int&gt;" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Employee.FlightSchool" Label="FlightSchool" Name="FlightSchool" Category="Property Optional" Type="string" MaxLength="50" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="MaxLength: 50
+Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerStringTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Employee.GivenName" Label="GivenName" Name="GivenName" Category="Property Optional" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerStringTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Employee.LicenseDate" Label="LicenseDate" Name="LicenseDate" Category="Property Optional" Type="Nullable&lt;DateTime&gt;" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerDateTimeTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Employee.PassportNumber" Label="PassportNumber" Name="PassportNumber" Category="Property Optional" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerStringTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Employee.PilotLicenseType" Label="PilotLicenseType" Name="PilotLicenseType" Category="Property Optional" Type="Nullable&lt;int&gt;" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Employee.Salary" Label="Salary" Name="Salary" Category="Property Required" Type="float" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerFloatTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Employee.SupervisorPersonId" Label="SupervisorPersonId" Name="SupervisorPersonId" Category="Property Foreign" Type="Nullable&lt;int&gt;" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:ColumnName: SupervisorPersonID
+Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" IsPrimaryKey="False" IsForeignKey="True" IsRequired="False" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Employee.Surname" Label="Surname" Name="Surname" Category="Property Optional" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerStringTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Passenger" Label="Passenger" Name="Passenger" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="Relational:TableName: Passenger
+RelationshipDiscoveryConvention:NavigationCandidates: System.Collections.Immutable.ImmutableSortedDictionary`2[System.Reflection.PropertyInfo,System.Type]" Category="EntityType" Group="Expanded" />
+<Node Id = "Flight.FlightNo" Label="FlightNo" Name="FlightNo" Category="Property Primary" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" IsPrimaryKey="True" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Flight.AircraftType" Label="AircraftType (1)" Name="AircraftType" Category="Navigation Property" Type="AircraftType"  Field="&lt;AircraftType&gt;k__BackingField" Dependent="" Principal="AircraftType" Inverse="Flight" />
+<Node Id = "Flight.AirlineCodeNavigation" Label="AirlineCodeNavigation (1)" Name="AirlineCodeNavigation" Category="Navigation Property" Type="Airline"  Field="&lt;AirlineCodeNavigation&gt;k__BackingField" Dependent="" Principal="Airline" Inverse="Flight" />
+<Node Id = "Flight.Booking" Label="Booking (*)" Name="Booking" Category="Navigation Collection" Type="ICollection&lt;Booking&gt;"  Field="&lt;Booking&gt;k__BackingField" Dependent="Booking" Principal="" Inverse="FlightNoNavigation" />
+<Node Id = "Flight.Copilot" Label="Copilot (1)" Name="Copilot" Category="Navigation Property" Type="Employee"  Field="&lt;Copilot&gt;k__BackingField" Dependent="" Principal="Employee" Inverse="FlightCopilot" />
+<Node Id = "Flight.Pilot" Label="Pilot (1)" Name="Pilot" Category="Navigation Property" Type="Employee"  Field="&lt;Pilot&gt;k__BackingField" Dependent="" Principal="Employee" Inverse="FlightPilot" />
+<Node Id = "Flight.AircraftTypeId" Label="AircraftTypeId" Name="AircraftTypeId" Category="Property Foreign" Type="Nullable&lt;byte&gt;" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:ColumnName: AircraftTypeID
+Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.ByteTypeMapping" IsPrimaryKey="False" IsForeignKey="True" IsRequired="False" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Flight.AirlineCode" Label="AirlineCode" Name="AirlineCode" Category="Property Foreign" Type="string" MaxLength="3" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="MaxLength: 3
+Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerStringTypeMapping" IsPrimaryKey="False" IsForeignKey="True" IsRequired="False" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Flight.CopilotId" Label="CopilotId" Name="CopilotId" Category="Property Foreign" Type="Nullable&lt;int&gt;" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" IsPrimaryKey="False" IsForeignKey="True" IsRequired="False" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Flight.Departure" Label="Departure" Name="Departure" Category="Property Optional" Type="string" MaxLength="50" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="MaxLength: 50
+Relational:DefaultValueSql: (N'(offen)')
+Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerStringTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="ValueGenerated.OnAdd" />
+<Node Id = "Flight.Destination" Label="Destination" Name="Destination" Category="Property Optional" Type="string" MaxLength="50" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="MaxLength: 50
+Relational:DefaultValueSql: (N'(offen)')
+Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerStringTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="ValueGenerated.OnAdd" />
+<Node Id = "Flight.FlightDate" Label="FlightDate" Name="FlightDate" Category="Property Required" Type="DateTime" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:DefaultValueSql: (getdate())
+Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerDateTimeTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="ValueGenerated.OnAdd" />
+<Node Id = "Flight.FreeSeats" Label="FreeSeats" Name="FreeSeats" Category="Property Optional" Type="Nullable&lt;short&gt;" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.ShortTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Flight.LastChange" Label="LastChange" Name="LastChange" Category="Property Required" Type="DateTime" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerDateTimeTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Flight.Memo" Label="Memo" Name="Memo" Category="Property Optional" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerStringTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Flight.NonSmokingFlight" Label="NonSmokingFlight" Name="NonSmokingFlight" Category="Property Optional" Type="Nullable&lt;bool&gt;" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.BoolTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Flight.PilotId" Label="PilotId" Name="PilotId" Category="Property Foreign" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" IsPrimaryKey="False" IsForeignKey="True" IsRequired="True" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Flight.Price" Label="Price" Name="Price" Category="Property Optional" Type="Nullable&lt;decimal&gt;" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:DefaultValueSql: ((123.45))
+Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.DecimalTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="ValueGenerated.OnAdd" />
+<Node Id = "Flight.Seats" Label="Seats" Name="Seats" Category="Property Required" Type="short" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.ShortTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Flight.Strikebound" Label="Strikebound" Name="Strikebound" Category="Property Optional" Type="Nullable&lt;bool&gt;" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.BoolTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Flight.Timestamp" Label="Timestamp" Name="Timestamp" Category="Property Optional" Type="Byte[]" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerByteArrayTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="True" IsUnicode="True" ValueGenerated="ValueGenerated.OnAddOrUpdate" />
+<Node Id = "Flight.Utilization" Label="Utilization" Name="Utilization" Category="Property Optional" Type="Nullable&lt;decimal&gt;" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:ColumnType: numeric(20, 8)
+Relational:ComputedColumnSql: ((100.0)-(([FreeSeats]*(1.0))/[Seats])*(100.0))
+Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.DecimalTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="ValueGenerated.OnAddOrUpdate" />
+<Node Id = "Persondetail" Label="Persondetail" Name="Persondetail" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="Relational:TableName: Persondetail
+RelationshipDiscoveryConvention:NavigationCandidates: System.Collections.Immutable.ImmutableSortedDictionary`2[System.Reflection.PropertyInfo,System.Type]" Category="EntityType" Group="Expanded" />
+<Node Id = "Passenger.PersonId" Label="PersonId" Name="PersonId" Category="Property Primary" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:ColumnName: PersonID
+Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" IsPrimaryKey="True" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="ValueGenerated.OnAdd" />
+<Node Id = "Passenger.Booking" Label="Booking (*)" Name="Booking" Category="Navigation Collection" Type="ICollection&lt;Booking&gt;"  Field="&lt;Booking&gt;k__BackingField" Dependent="Booking" Principal="" Inverse="Passenger" />
+<Node Id = "Passenger.Detail" Label="Detail (1)" Name="Detail" Category="Navigation Property" Type="Persondetail"  Field="&lt;Detail&gt;k__BackingField" Dependent="" Principal="Persondetail" Inverse="Passenger" />
+<Node Id = "Passenger.Birthday" Label="Birthday" Name="Birthday" Category="Property Optional" Type="Nullable&lt;DateTime&gt;" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerDateTimeTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Passenger.CustomerSince" Label="CustomerSince" Name="CustomerSince" Category="Property Optional" Type="Nullable&lt;DateTime&gt;" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerDateTimeTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Passenger.DetailId" Label="DetailId" Name="DetailId" Category="Property Foreign" Type="Nullable&lt;int&gt;" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:ColumnName: DetailID
+Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" IsPrimaryKey="False" IsForeignKey="True" IsRequired="False" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Passenger.Email" Label="Email" Name="Email" Category="Property Optional" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:ColumnName: EMail
+Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerStringTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Passenger.GivenName" Label="GivenName" Name="GivenName" Category="Property Optional" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerStringTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Passenger.Status" Label="Status" Name="Status" Category="Property Optional" Type="string" MaxLength="1" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="MaxLength: 1
+Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerStringTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Passenger.Surname" Label="Surname" Name="Surname" Category="Property Optional" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerStringTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Persondetail" Label="Persondetail" Name="Persondetail" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="" Category="EntityType" Group="Expanded" />
+<Node Id = "Persondetail.Id" Label="Id" Name="Id" Category="Property Primary" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:ColumnName: ID
+Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" IsPrimaryKey="True" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="ValueGenerated.OnAdd" />
+<Node Id = "Persondetail.Employee" Label="Employee (*)" Name="Employee" Category="Navigation Collection" Type="ICollection&lt;Employee&gt;"  Field="&lt;Employee&gt;k__BackingField" Dependent="Employee" Principal="" Inverse="Detail" />
+<Node Id = "Persondetail.Passenger" Label="Passenger (*)" Name="Passenger" Category="Navigation Collection" Type="ICollection&lt;Passenger&gt;"  Field="&lt;Passenger&gt;k__BackingField" Dependent="Passenger" Principal="" Inverse="Detail" />
+<Node Id = "Persondetail.City" Label="City" Name="City" Category="Property Optional" Type="string" MaxLength="30" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="MaxLength: 30
+Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerStringTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Persondetail.Country" Label="Country" Name="Country" Category="Property Optional" Type="string" MaxLength="3" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="MaxLength: 3
+Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerStringTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Persondetail.Memo" Label="Memo" Name="Memo" Category="Property Optional" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerStringTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Persondetail.Photo" Label="Photo" Name="Photo" Category="Property Optional" Type="Byte[]" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerByteArrayTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Persondetail.Postcode" Label="Postcode" Name="Postcode" Category="Property Optional" Type="string" MaxLength="8" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="MaxLength: 8
+Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerStringTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Persondetail.Street" Label="Street" Name="Street" Category="Property Optional" Type="string" MaxLength="30" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="MaxLength: 30
+Relational:TypeMapping: Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerStringTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+  </Nodes>
+  <Links>
+<Link Source = "IModel" Target="AircraftType" Category="Contains" />
+<Link Source = "IModel" Target="AircraftTypeDetail" Category="Contains" />
+<Link Source = "AircraftType" Target="AircraftType.AircraftTypeDetail" Category="Contains" />
+<Link Source = "AircraftType" Target="AircraftType.Flight" Category="Contains" />
+<Link Source = "AircraftType" Target="AircraftType.TypeId" Category="Contains" />
+<Link Source = "AircraftType" Target="AircraftType.Manufacturer" Category="Contains" />
+<Link Source = "AircraftType" Target="AircraftType.Name" Category="Contains" />
+<Link Source = "IModel" Target="Airline" Category="Contains" />
+<Link Source = "AircraftTypeDetail" Target="AircraftTypeDetail.AircraftType" Category="Contains" />
+<Link Source = "AircraftTypeDetail" Target="AircraftTypeDetail.AircraftTypeId" Category="Contains" />
+<Link Source="AircraftTypeDetail" Target="AircraftType" From="AircraftTypeDetail.AircraftTypeId" To="AircraftType.TypeId" Name="AircraftTypeDetail -> AircraftType" Annotations="" IsUnique="True" Label="1:1" Category="Foreign Key" />
+<Link Source = "AircraftTypeDetail" Target="AircraftTypeDetail.Length" Category="Contains" />
+<Link Source = "AircraftTypeDetail" Target="AircraftTypeDetail.Memo" Category="Contains" />
+<Link Source = "AircraftTypeDetail" Target="AircraftTypeDetail.Tare" Category="Contains" />
+<Link Source = "AircraftTypeDetail" Target="AircraftTypeDetail.TurbineCount" Category="Contains" />
+<Link Source = "IModel" Target="Booking" Category="Contains" />
+<Link Source = "Airline" Target="Airline.Flight" Category="Contains" />
+<Link Source = "Airline" Target="Airline.Code" Category="Contains" />
+<Link Source = "Airline" Target="Airline.Name" Category="Contains" />
+<Link Source = "IModel" Target="Employee" Category="Contains" />
+<Link Source = "Booking" Target="Booking.FlightNoNavigation" Category="Contains" />
+<Link Source = "Booking" Target="Booking.Passenger" Category="Contains" />
+<Link Source = "Booking" Target="Booking.FlightNo" Category="Contains" />
+<Link Source="Booking" Target="Flight" From="Booking.FlightNo" To="Flight.FlightNo" Name="Booking -> Flight" Annotations="" IsUnique="False" Label="1:*" Category="Foreign Key" />
+<Link Source="Booking" Target="Passenger" From="Booking.PassengerId" To="Passenger.PersonId" Name="Booking -> Passenger" Annotations="" IsUnique="False" Label="1:*" Category="Foreign Key" />
+<Link Source = "Booking" Target="Booking.PassengerId" Category="Contains" />
+<Link Source = "IModel" Target="Flight" Category="Contains" />
+<Link Source = "Employee" Target="Employee.Detail" Category="Contains" />
+<Link Source = "Employee" Target="Employee.FlightCopilot" Category="Contains" />
+<Link Source = "Employee" Target="Employee.FlightPilot" Category="Contains" />
+<Link Source = "Employee" Target="Employee.InverseSupervisorPerson" Category="Contains" />
+<Link Source = "Employee" Target="Employee.SupervisorPerson" Category="Contains" />
+<Link Source = "Employee" Target="Employee.PersonId" Category="Contains" />
+<Link Source="Employee" Target="Persondetail" From="Employee.DetailId" To="Persondetail.Id" Name="Employee -> Persondetail" Annotations="" IsUnique="False" Label="1:*" Category="Foreign Key" />
+<Link Source="Employee" Target="Employee" From="Employee.SupervisorPersonId" To="Employee.PersonId" Name="Employee -> Employee" Annotations="" IsUnique="False" Label="1:*" Category="Foreign Key" />
+<Link Source = "Employee" Target="Employee.Birthday" Category="Contains" />
+<Link Source = "Employee" Target="Employee.DetailId" Category="Contains" />
+<Link Source = "Employee" Target="Employee.Discriminator" Category="Contains" />
+<Link Source = "Employee" Target="Employee.Email" Category="Contains" />
+<Link Source = "Employee" Target="Employee.FlightHours" Category="Contains" />
+<Link Source = "Employee" Target="Employee.FlightSchool" Category="Contains" />
+<Link Source = "Employee" Target="Employee.GivenName" Category="Contains" />
+<Link Source = "Employee" Target="Employee.LicenseDate" Category="Contains" />
+<Link Source = "Employee" Target="Employee.PassportNumber" Category="Contains" />
+<Link Source = "Employee" Target="Employee.PilotLicenseType" Category="Contains" />
+<Link Source = "Employee" Target="Employee.Salary" Category="Contains" />
+<Link Source = "Employee" Target="Employee.SupervisorPersonId" Category="Contains" />
+<Link Source = "Employee" Target="Employee.Surname" Category="Contains" />
+<Link Source = "IModel" Target="Passenger" Category="Contains" />
+<Link Source = "Flight" Target="Flight.AircraftType" Category="Contains" />
+<Link Source = "Flight" Target="Flight.AirlineCodeNavigation" Category="Contains" />
+<Link Source = "Flight" Target="Flight.Booking" Category="Contains" />
+<Link Source = "Flight" Target="Flight.Copilot" Category="Contains" />
+<Link Source = "Flight" Target="Flight.Pilot" Category="Contains" />
+<Link Source = "Flight" Target="Flight.FlightNo" Category="Contains" />
+<Link Source="Flight" Target="AircraftType" From="Flight.AircraftTypeId" To="AircraftType.TypeId" Name="Flight -> AircraftType" Annotations="" IsUnique="False" Label="1:*" Category="Foreign Key" />
+<Link Source="Flight" Target="Airline" From="Flight.AirlineCode" To="Airline.Code" Name="Flight -> Airline" Annotations="" IsUnique="False" Label="1:*" Category="Foreign Key" />
+<Link Source="Flight" Target="Employee" From="Flight.CopilotId" To="Employee.PersonId" Name="Flight -> Employee" Annotations="" IsUnique="False" Label="1:*" Category="Foreign Key" />
+<Link Source="Flight" Target="Employee" From="Flight.PilotId" To="Employee.PersonId" Name="Flight -> Employee" Annotations="" IsUnique="False" Label="1:*" Category="Foreign Key" />
+<Link Source = "Flight" Target="Flight.AircraftTypeId" Category="Contains" />
+<Link Source = "Flight" Target="Flight.AirlineCode" Category="Contains" />
+<Link Source = "Flight" Target="Flight.CopilotId" Category="Contains" />
+<Link Source = "Flight" Target="Flight.Departure" Category="Contains" />
+<Link Source = "Flight" Target="Flight.Destination" Category="Contains" />
+<Link Source = "Flight" Target="Flight.FlightDate" Category="Contains" />
+<Link Source = "Flight" Target="Flight.FreeSeats" Category="Contains" />
+<Link Source = "Flight" Target="Flight.LastChange" Category="Contains" />
+<Link Source = "Flight" Target="Flight.Memo" Category="Contains" />
+<Link Source = "Flight" Target="Flight.NonSmokingFlight" Category="Contains" />
+<Link Source = "Flight" Target="Flight.PilotId" Category="Contains" />
+<Link Source = "Flight" Target="Flight.Price" Category="Contains" />
+<Link Source = "Flight" Target="Flight.Seats" Category="Contains" />
+<Link Source = "Flight" Target="Flight.Strikebound" Category="Contains" />
+<Link Source = "Flight" Target="Flight.Timestamp" Category="Contains" />
+<Link Source = "Flight" Target="Flight.Utilization" Category="Contains" />
+<Link Source = "IModel" Target="Persondetail" Category="Contains" />
+<Link Source = "Passenger" Target="Passenger.Booking" Category="Contains" />
+<Link Source = "Passenger" Target="Passenger.Detail" Category="Contains" />
+<Link Source = "Passenger" Target="Passenger.PersonId" Category="Contains" />
+<Link Source="Passenger" Target="Persondetail" From="Passenger.DetailId" To="Persondetail.Id" Name="Passenger -> Persondetail" Annotations="" IsUnique="False" Label="1:*" Category="Foreign Key" />
+<Link Source = "Passenger" Target="Passenger.Birthday" Category="Contains" />
+<Link Source = "Passenger" Target="Passenger.CustomerSince" Category="Contains" />
+<Link Source = "Passenger" Target="Passenger.DetailId" Category="Contains" />
+<Link Source = "Passenger" Target="Passenger.Email" Category="Contains" />
+<Link Source = "Passenger" Target="Passenger.GivenName" Category="Contains" />
+<Link Source = "Passenger" Target="Passenger.Status" Category="Contains" />
+<Link Source = "Passenger" Target="Passenger.Surname" Category="Contains" />
+<Link Source = "IModel" Target="Persondetail" Category="Contains" />
+<Link Source = "Persondetail" Target="Persondetail.Employee" Category="Contains" />
+<Link Source = "Persondetail" Target="Persondetail.Passenger" Category="Contains" />
+<Link Source = "Persondetail" Target="Persondetail.Id" Category="Contains" />
+<Link Source = "Persondetail" Target="Persondetail.City" Category="Contains" />
+<Link Source = "Persondetail" Target="Persondetail.Country" Category="Contains" />
+<Link Source = "Persondetail" Target="Persondetail.Memo" Category="Contains" />
+<Link Source = "Persondetail" Target="Persondetail.Photo" Category="Contains" />
+<Link Source = "Persondetail" Target="Persondetail.Postcode" Category="Contains" />
+<Link Source = "Persondetail" Target="Persondetail.Street" Category="Contains" />
+  </Links>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="EntityType" ValueLabel="True">
+      <Condition Expression="HasCategory('EntityType')" />
+      <Setter Property="Background" Value="#FFC0C0C0" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Property Primary" ValueLabel="True">
+      <Condition Expression="HasCategory('Property Primary')" />
+      <Setter Property="Background" Value="#FF008000" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Property Optional" ValueLabel="True">
+      <Condition Expression="HasCategory('Property Optional')" />
+      <Setter Property="Background" Value="#FF808040" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Property Foreign" ValueLabel="True">
+      <Condition Expression="HasCategory('Property Foreign')" />
+      <Setter Property="Background" Value="#FF8080FF" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Property Required" ValueLabel="True">
+      <Condition Expression="HasCategory('Property Required')" />
+      <Setter Property="Background" Value="#FFC0A000" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Navigation Property" ValueLabel="True">
+      <Condition Expression="HasCategory('Navigation Property')" />
+      <Setter Property="Background" Value="#FF990000" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Navigation Collection" ValueLabel="True">
+      <Condition Expression="HasCategory('Navigation Collection')" />
+      <Setter Property="Background" Value="#FFFF3232" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Model" ValueLabel="True">
+      <Condition Expression="HasCategory('Model')" />
+      <Setter Property="Background" Value="#FFFFFFFF" />
+    </Style>
+  </Styles>
+  <Properties>
+    <Property Id="Name" Group="Model Properties" DataType="System.String" />
+    <Property Id="Field"  Description="Backing field" Group="Model Properties" DataType="System.String" />
+    <Property Id="Type"  Description="CLR data type" Group="Model Properties" DataType="System.String" />
+    <Property Id="To" Description="Source property" Group="Model Properties" DataType="System.String" />
+    <Property Id="From" Description="Target property" Group="Model Properties" DataType="System.String" />
+    <Property Id="Dependent" Description="Dependent entity" Group="Model Properties" DataType="System.String" />
+    <Property Id="Inverse" Description="Inverse entity" Group="Model Properties" DataType="System.String" />
+    <Property Id="Principal" Description="Principal entity" Group="Model Properties" DataType="System.String" />    
+    <Property Id="Annotations" Description="Annotations" Group="Model Properties" DataType="System.String" />
+    <Property Id="BaseClass"  Description="Base class" Group="Model Properties" DataType="System.String" />
+    <Property Id="ChangeTrackingStrategy" Description="Change tracking strategy" Group="Model Properties" DataType="System.String" />
+    <Property Id="IsUnique" Group="Model Properties" DataType="System.Boolean" />
+    <Property Id="IsAbstract" Group="Model Properties" DataType="System.Boolean" />
+    <Property Id="ProductVersion" Label="Product Version" Description="EF Core product version" Group="Model Properties" DataType="System.String" />
+    <Property Id="IsIndexed" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsRequired" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsPrimaryKey" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsForeignKey" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsShadow" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsAlternateKey" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsConcurrencyToken" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsIndexed" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsUnicode" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="ValueGenerated" Group="Property Flags" DataType="System.String" />
+    <Property Id="BeforeSaveBehavior" Group="Property Flags" DataType="System.String" />
+    <Property Id="AfterSaveBehavior" Group="Property Flags" DataType="System.String" />
+    <Property Id="PropertyAccessMode" Group="Property Flags" DataType="System.String" />
+  </Properties>
+</DirectedGraph>

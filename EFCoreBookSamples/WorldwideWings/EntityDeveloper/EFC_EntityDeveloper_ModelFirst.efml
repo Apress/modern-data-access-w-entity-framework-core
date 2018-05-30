@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<efcore p1:Guid="cf5ee788-a1ee-465d-8f81-3b4c5989a347" xmlns:p1="http://devart.com/schemas/EntityDeveloper/1.0">
+  <class name="Person" entity-set="People" p1:Guid="f947d81b-47ed-4ca9-a753-1e20c0dcfa2c">
+    <id name="ID" type="String" p1:ValidateRequired="true" p1:Guid="d93b05f2-d0b2-4d19-b60b-22476f7c27db">
+      <column name="" />
+    </id>
+    <property name="Name" type="String" p1:ValidateRequired="true" p1:Guid="9841399d-145b-497d-b0af-a8a4de585cc2">
+      <column name="" />
+    </property>
+    <property name="Birthday" type="DateTime" p1:ValidateRequired="true" p1:Guid="9b26b578-0bc5-4ec5-995f-84f987168df0">
+      <column name="" sql-type="datetime2" />
+    </property>
+  </class>
+</efcore>

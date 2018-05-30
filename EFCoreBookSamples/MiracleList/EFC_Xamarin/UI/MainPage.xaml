@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage  x:Name="MainPage" xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:EFC_Xamarin"
+             x:Class="EFC_Xamarin.MainPage" WidthRequest="800" HeightRequest="500" >
+ <!--<local:GradientView StartColor="Red" EndColor="Green">-->
+ <Grid Margin="0,0,0,0" BackgroundColor="CornflowerBlue">
+  <Grid.RowDefinitions>
+   <RowDefinition Height="*"></RowDefinition>
+   <RowDefinition Height="auto"></RowDefinition>
+  </Grid.RowDefinitions>
+  <StackLayout Margin="10,10,10,10" Grid.Row="0">
+   <!-- ==================== logo -->
+   <Image x:Name="Logo" Source="miraclelistlogo.jpg" HeightRequest="100" WidthRequest="200" HorizontalOptions="End"   ></Image>
+   <!-- ==================== new Task -->
+   <Label Text="What do you have to do?" FontSize="20"></Label>
+
+   <StackLayout Orientation="Horizontal">
+     <ContentView BackgroundColor="White">  <DatePicker x:Name="C_Datum" /></ContentView>
+    <Entry BackgroundColor="White" x:Name="C_Task" HorizontalOptions="FillAndExpand" Completed="Add"></Entry>
+   </StackLayout>
+   <!-- ==================== actions -->
+   <StackLayout Orientation="Horizontal">
+    <Button Clicked="Add" BackgroundColor="White" Text="Add"></Button>
+     <Button Clicked="RemoveAll"  BackgroundColor="White" Text="Remove all" Margin="5,0,0,0"></Button>
+   </StackLayout>
+   <Label Text="Your task list:" FontSize="20"/>
+   <!-- ==================== list of tasks -->
+   <ListView x:Name="C_Tasks" ItemsSource="{Binding Tasks}">
+    <ListView.ItemTemplate>
+     <DataTemplate>
+      <ViewCell>
+       <StackLayout Orientation="Horizontal" >
+        <Button BackgroundColor="White" Text="Done" x:Name="C_Done"  Clicked="SetDone" Margin="0,0,5,0" CommandParameter="{Binding TaskID}" />
+        <Button BackgroundColor="White"  CommandParameter="{Binding TaskID}" FontAttributes="Bold" Text="{Binding View}" x:Name="C_Details"  Clicked="ShowDetails" />
+       </StackLayout>
+      </ViewCell>
+     </DataTemplate>
+    </ListView.ItemTemplate>
+   </ListView>
+  </StackLayout>
+  <!-- ==================== statusbar -->
+  <StackLayout BackgroundColor="White" Grid.Row="1">
+   <Label Margin="10,0,0,0"  x:Name="C_StatusBar" FontSize="11" Text="{Binding StatusText}" />
+  </StackLayout>
+ </Grid>
+<!--</local:GradientView>-->
+</ContentPage>

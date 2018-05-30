@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BO.Airline">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAQAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Airline.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="FlightSet" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="BO.Flight">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <AssociationLine Name="Pilot" Type="BO.Pilot" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.125" Y="5.411" />
+        <Point X="4.125" Y="6.875" />
+        <Point X="8.25" Y="6.875" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Copilot" Type="BO.Pilot" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.438" Y="5.411" />
+        <Point X="4.438" Y="6.532" />
+        <Point X="8.25" Y="6.532" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>QAAEAgACEREAAAAEAghCAIAAAAFAgAAHQACIAAAAAAA=</HashCode>
+      <FileName>Flight.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Airline" />
+      <Property Name="Pilot" />
+      <Property Name="Copilot" />
+      <Property Name="AircraftType" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="BookingSet" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="BO.AircraftType">
+    <Position X="0.75" Y="2.25" Width="1.5" />
+    <AssociationLine Name="Detail" Type="BO.AircraftTypeDetail" FixedToPoint="true">
+      <Path>
+        <Point X="1.25" Y="3.65" />
+        <Point X="1.25" Y="4.5" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.671" Y="0.185" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAAQAAAAAACAgAAAAAAAACAA=</HashCode>
+      <FileName>AircraftType.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Detail" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="FlightSet" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="BO.AircraftTypeDetail">
+    <Position X="0.75" Y="4.5" Width="1.5" />
+    <AssociationLine Name="AircraftType" Type="BO.AircraftType" FixedToPoint="true">
+      <Path>
+        <Point X="1.938" Y="4.5" />
+        <Point X="1.938" Y="3.65" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.942" Y="0.123" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIBAAAAAAAACQAEAAAAAAAI=</HashCode>
+      <FileName>AircraftTypeDetail.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AircraftType" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BO.Booking">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <AssociationLine Name="Passenger" Type="BO.Passenger" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.812" Y="1.721" />
+        <Point X="6.812" Y="3.5" />
+        <Point X="7.5" Y="3.5" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.202" Y="1.102" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoAA=</HashCode>
+      <FileName>Booking.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Flight" />
+      <Property Name="Passenger" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BO.PassengerStatus">
+    <Position X="5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAoAEAAAA=</HashCode>
+      <FileName>Passenger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BO.Passenger">
+    <Position X="7.5" Y="3.25" Width="1.5" />
+    <AssociationLine Name="BookingSet" Type="BO.Booking" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.5" Y="3.688" />
+        <Point X="6.625" Y="3.688" />
+        <Point X="6.625" Y="1.721" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.06" Y="0.516" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAAAgAAAAABAAAAAAAA=</HashCode>
+      <FileName>Passenger.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="BookingSet" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="BO.Persondetail">
+    <Position X="10.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgCAIAAAAgAAAAAIAAAACAAIAAAAAAAA=</HashCode>
+      <FileName>Persondetail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BO.Person">
+    <Position X="8.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAgAAAIAEAAAAAAAABCAIAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Person.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Detail" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BO.Pilot">
+    <Position X="8.25" Y="6.25" Width="1.5" />
+    <AssociationLine Name="FlightAsPilotSet" Type="BO.Flight" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.25" Y="7.488" />
+        <Point X="3.625" Y="7.488" />
+        <Point X="3.625" Y="5.411" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.15" Y="1.841" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="FlightAsCopilotSet" Type="BO.Flight" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.25" Y="7.144" />
+        <Point X="3.875" Y="7.144" />
+        <Point X="3.875" Y="5.411" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.286" Y="1.539" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAACAAAAgQAAAAAAAAAAAAAACAAIA=</HashCode>
+      <FileName>Pilot.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="PilotLicenseType" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="FlightAsPilotSet" />
+      <Property Name="FlightAsCopilotSet" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="BO.Employee">
+    <Position X="9.5" Y="3.25" Width="1.5" />
+    <AssociationLine Name="Supervisor" Type="BO.Employee" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11" Y="3.75" />
+        <Point X="11.927" Y="3.75" />
+        <Point X="11.927" Y="4.812" />
+        <Point X="11" Y="4.812" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAICAAAAIAAAAAAAAAAAQAACAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Employee.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Supervisor" />
+    </ShowAsAssociation>
+  </Class>
+  <Enum Name="BO.PilotLicenseType">
+    <Position X="11" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAUAQAAAACAAAAAAAAAAEAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Pilot.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="8.25" />
+</ClassDiagram>

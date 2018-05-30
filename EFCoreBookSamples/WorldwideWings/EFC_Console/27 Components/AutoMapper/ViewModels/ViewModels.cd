@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="EFC_Console.ViewModels.FlightView">
+    <Position X="3.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAgAAEQSAAFAEAggCAACAQAEAAAAHAACAAAAAAAA=</HashCode>
+      <FileName>27 Components\AutoMapper\ViewModels\ViewModels.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Pilot" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Passengers" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="EFC_Console.ViewModels.PilotView">
+    <Position X="1.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAABAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>27 Components\AutoMapper\ViewModels\ViewModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EFC_Console.ViewModels.PassengerView">
+    <Position X="6.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAgAAAQAAAAAAAAAABAAIAAAAAABAAAAAAAA=</HashCode>
+      <FileName>27 Components\AutoMapper\ViewModels\ViewModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="8.25" />
+</ClassDiagram>

@@ -1,0 +1,2 @@
+﻿uninstall-package EntityFramework
+install-package microsoft.entityframeworkcore.sqlserver

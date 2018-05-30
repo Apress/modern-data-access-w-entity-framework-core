@@ -1,0 +1,1 @@
+﻿Sample Code: see other Visual Studio solutions folders

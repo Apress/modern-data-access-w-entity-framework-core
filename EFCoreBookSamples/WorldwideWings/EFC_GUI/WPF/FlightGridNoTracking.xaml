@@ -1,0 +1,67 @@
+﻿<Window x:Class="GUI.WPF.FlightGridNoTracking"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUI.WPF"
+        xmlns:wpf="clr-namespace:ITVisions.WPF;assembly=ITV_DemoUtil"
+        mc:Ignorable="d"
+        Title="World Wide Wings - FlightGridNoTracking" Height="455.233" Width="634.884">
+
+ <Window.Resources>
+  <wpf:InverseBooleanConverter x:Key="InverseBooleanConverter"></wpf:InverseBooleanConverter>
+ </Window.Resources>
+
+ <Grid x:Name="LayoutRoot" Background="White">
+  <DockPanel>
+
+   <!--===================== Command Bar-->
+   <StackPanel Orientation="Horizontal" DockPanel.Dock="Top">
+    <ComboBox Width="100" x:Name="C_City" ItemsSource="{Binding}">
+     <ComboBoxItem  Content="All" IsSelected="True" />
+     <ComboBoxItem  Content="Rome" />
+     <ComboBoxItem Content="Paris" />
+     <ComboBoxItem Content="New York/JFC" />
+     <ComboBoxItem Content="Berlin" />
+    </ComboBox>
+    <ComboBox Width="100" x:Name="C_Count" >
+     <ComboBoxItem Content="10" IsSelected="True" />
+     <ComboBoxItem Content="100" IsSelected="True" />
+     <ComboBoxItem Content="1000" IsSelected="True" />
+     <ComboBoxItem Content="All" IsSelected="True" />
+    </ComboBox>
+    <ComboBox Width="100" x:Name="C_Mode" >
+     <ComboBoxItem Content="Tracking" IsSelected="True" />
+     <ComboBoxItem Content="NoTracking" IsSelected="False" />
+    </ComboBox>
+    <Button Width="100" x:Name="C_Test" Content="Test Connection" Click="C_Test_Click" ></Button>
+    <Button Width="100" x:Name="C_Load" Content="Load" Click="C_Load_Click"></Button>
+    <Button Width="100" x:Name="C_Save" Content="Save" Click="C_Save_Click"></Button>
+   </StackPanel>
+   <!--===================== Status Bar-->
+   <StatusBar DockPanel.Dock="Bottom">
+    <Label x:Name="C_Status"></Label>
+   </StatusBar>
+   <!--===================== Datagrid-->
+   <DataGrid Name="C_flightDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True"  IsSynchronizedWithCurrentItem="True"  SelectedIndex="0" Height="Auto" BeginningEdit="C_flightDataGrid_BeginningEdit"  PreviewKeyDown="C_flightDataGrid_PreviewKeyDown" RowEditEnding="C_flightDataGrid_RowEditEnding">
+    <DataGrid.Columns>
+     <DataGridTextColumn Binding="{Binding Path=FlightNo}" Header="Flug No" Width="SizeToHeader" />
+     <DataGridTextColumn Binding="{Binding Path=Departure}" Header="Departure" Width="SizeToHeader" />
+     <DataGridTextColumn Binding="{Binding Path=Destination}" Header="Destination" Width="SizeToHeader" />
+     <DataGridTextColumn Binding="{Binding Path=Seats}" Header="Seats" Width="SizeToHeader" />
+     <DataGridTextColumn Binding="{Binding Path=FreeSeats}" Header="Free Seats" Width="SizeToHeader" />
+     <DataGridCheckBoxColumn Binding="{Binding Path=NonSmokingFlight, Converter={StaticResource InverseBooleanConverter}}" Header="Non Smoking Flight" Width="SizeToHeader" />
+     <DataGridTemplateColumn Header="Date" Width="100">
+      <DataGridTemplateColumn.CellTemplate>
+       <DataTemplate>
+        <DatePicker SelectedDate="{Binding Path=Date}" />
+       </DataTemplate>
+      </DataGridTemplateColumn.CellTemplate>
+     </DataGridTemplateColumn>
+     <DataGridTextColumn Binding="{Binding Path=Memo}" Width="200" Header="Memo"  />
+    </DataGrid.Columns>
+   </DataGrid>
+
+  </DockPanel>
+ </Grid>
+</Window>
