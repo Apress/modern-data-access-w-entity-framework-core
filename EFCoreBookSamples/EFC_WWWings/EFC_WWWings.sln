@@ -1,0 +1,263 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFC_Console", "EFC_Console\EFC_Console.csproj", "{1A340B7A-30DF-4F91-ADA5-95D3538836A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFC_BO", "EFC_BO\EFC_BO.csproj", "{D332DA62-C2C1-4819-939C-01724497A22D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFC_DA", "EFC_DA\EFC_DA.csproj", "{896C3F2D-C2C8-4054-BC9A-F820BC3E8C9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFC_Tools", "EFC_Tools\EFC_Tools.csproj", "{A3C99E38-214D-4FCC-9A45-FB080ABAD29D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQL", "SQL", "{473FAC00-9DAA-4941-B5D8-7F01FB5250C2}"
+	ProjectSection(SolutionItems) = preProject
+		SQL\WWWings66.sql = SQL\WWWings66.sql
+		SQL\WWWingsV1.sql = SQL\WWWingsV1.sql
+		SQL\WWWingsV2.sql = SQL\WWWingsV2.sql
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFC_BL", "EFC_BL\EFC_BL.csproj", "{5044BDED-33D3-4BAF-9337-66608CC52C71}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{9B9B00C2-CB9D-496B-AFB2-065191C23807}"
+	ProjectSection(SolutionItems) = preProject
+		nuget.config = nuget.config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3FD84140-2E3A-4931-BF9D-9CADCE73BD4B}"
+	ProjectSection(SolutionItems) = preProject
+		.tfignore = .tfignore
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "!!! README", "!!! README", "{822E813F-70DD-472D-AFD1-BEDACE7920F4}"
+	ProjectSection(SolutionItems) = preProject
+		Lib\ITV_DemoUtil.dll = Lib\ITV_DemoUtil.dll
+		readme.txt = readme.txt
+		SolutionInfo.cs = SolutionInfo.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10 Reverse Engineering", "10 Reverse Engineering", "{75A60C07-7F8D-4BB5-9571-83CA00699C2B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "26 Tools", "26 Tools", "{F7EAA64B-A956-4292-9444-ED9BF3A783C9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "22 Mapping Tips", "22 Mapping Tips", "{31A0C26C-B5FA-423E-A993-90F0FF0AE992}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "11 Forward Engineering", "11 Forward Engineering", "{4BE5E9B2-A7F2-4FD3-967F-2B3C8A0BD7CE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFC_BO_Step1", "EFC_BO_Step1\EFC_BO_Step1.csproj", "{2D22D007-12AD-46A4-9989-E74E6B3E578D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFC_DA_Step1", "EFC_DA_Step1\EFC_DA_Step1.csproj", "{9B902299-2EB3-442F-9ABB-4C54D5400B8B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFC_Console_Step1", "EFC_Console_Step1\EFC_Console_Step1.csproj", "{61E4995E-5CAC-4671-A133-BFB6D6978BC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFC_GUI", "EFC_GUI\EFC_GUI.csproj", "{21CB9A20-8935-4EAF-8AF8-61BB9514728E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LINQPad", "LINQPad", "{9B107F70-D698-4620-873F-12CD38361ED9}"
+	ProjectSection(SolutionItems) = preProject
+		LINQPad\CS_Class.linq = LINQPad\CS_Class.linq
+		LINQPad\CS_Expression.linq = LINQPad\CS_Expression.linq
+		LINQPad\CS_Statement.linq = LINQPad\CS_Statement.linq
+		LINQPad\EFC_LINQ_Flights.linq = LINQPad\EFC_LINQ_Flights.linq
+		LINQPad\EFC_LINQ_FlightsWithPilots.linq = LINQPad\EFC_LINQ_FlightsWithPilots.linq
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFC_EntityDeveloper", "EFC_EntityDeveloper\EFC_EntityDeveloper.csproj", "{3F178A6E-A4BB-4956-86E9-4184D7AC8326}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFC_WWWingsV1_Reverse(NETFX)", "EFC_WWWingsV1_Reverse(NETFX)\EFC_WWWingsV1_Reverse(NETFX).csproj", "{F1EE915F-5679-4B36-8074-2A3982E57ED6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFC_WWWingsV1_Reverse(NETStandard)", "EFC_WWWingsV1_Reverse(NETStandard)\EFC_WWWingsV1_Reverse(NETStandard).csproj", "{0D854AD0-342D-4C64-813D-17E8DA935288}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFC_MappingScenarios", "AdditionalSamples\EFC_MappingTest\EFC_MappingScenarios.csproj", "{2F164378-DDDF-4B7C-B2F6-B301403AE5E1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Additional Scripts for V2 Forward Engineering", "Additional Scripts for V2 Forward Engineering", "{7BD6FCEC-9AC8-4912-B49A-53093A393D80}"
+	ProjectSection(SolutionItems) = preProject
+		SQL\WWWingsV2_CreateSP.sql = SQL\WWWingsV2_CreateSP.sql
+		SQL\WWWingsV2_CreateTVF.sql = SQL\WWWingsV2_CreateTVF.sql
+		SQL\WWWingsV2_CreateView.sql = SQL\WWWingsV2_CreateView.sql
+		SQL\WWWingsV2_ExtraColumns.sql = SQL\WWWingsV2_ExtraColumns.sql
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A340B7A-30DF-4F91-ADA5-95D3538836A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A340B7A-30DF-4F91-ADA5-95D3538836A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A340B7A-30DF-4F91-ADA5-95D3538836A5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1A340B7A-30DF-4F91-ADA5-95D3538836A5}.Debug|x86.Build.0 = Debug|Any CPU
+		{1A340B7A-30DF-4F91-ADA5-95D3538836A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A340B7A-30DF-4F91-ADA5-95D3538836A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A340B7A-30DF-4F91-ADA5-95D3538836A5}.Release|x86.ActiveCfg = Release|Any CPU
+		{1A340B7A-30DF-4F91-ADA5-95D3538836A5}.Release|x86.Build.0 = Release|Any CPU
+		{D332DA62-C2C1-4819-939C-01724497A22D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D332DA62-C2C1-4819-939C-01724497A22D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D332DA62-C2C1-4819-939C-01724497A22D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D332DA62-C2C1-4819-939C-01724497A22D}.Debug|x86.Build.0 = Debug|Any CPU
+		{D332DA62-C2C1-4819-939C-01724497A22D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D332DA62-C2C1-4819-939C-01724497A22D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D332DA62-C2C1-4819-939C-01724497A22D}.Release|x86.ActiveCfg = Release|Any CPU
+		{D332DA62-C2C1-4819-939C-01724497A22D}.Release|x86.Build.0 = Release|Any CPU
+		{896C3F2D-C2C8-4054-BC9A-F820BC3E8C9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{896C3F2D-C2C8-4054-BC9A-F820BC3E8C9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{896C3F2D-C2C8-4054-BC9A-F820BC3E8C9C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{896C3F2D-C2C8-4054-BC9A-F820BC3E8C9C}.Debug|x86.Build.0 = Debug|Any CPU
+		{896C3F2D-C2C8-4054-BC9A-F820BC3E8C9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{896C3F2D-C2C8-4054-BC9A-F820BC3E8C9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{896C3F2D-C2C8-4054-BC9A-F820BC3E8C9C}.Release|x86.ActiveCfg = Release|Any CPU
+		{896C3F2D-C2C8-4054-BC9A-F820BC3E8C9C}.Release|x86.Build.0 = Release|Any CPU
+		{A3C99E38-214D-4FCC-9A45-FB080ABAD29D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3C99E38-214D-4FCC-9A45-FB080ABAD29D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3C99E38-214D-4FCC-9A45-FB080ABAD29D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A3C99E38-214D-4FCC-9A45-FB080ABAD29D}.Debug|x86.Build.0 = Debug|Any CPU
+		{A3C99E38-214D-4FCC-9A45-FB080ABAD29D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3C99E38-214D-4FCC-9A45-FB080ABAD29D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3C99E38-214D-4FCC-9A45-FB080ABAD29D}.Release|x86.ActiveCfg = Release|Any CPU
+		{A3C99E38-214D-4FCC-9A45-FB080ABAD29D}.Release|x86.Build.0 = Release|Any CPU
+		{5044BDED-33D3-4BAF-9337-66608CC52C71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5044BDED-33D3-4BAF-9337-66608CC52C71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5044BDED-33D3-4BAF-9337-66608CC52C71}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5044BDED-33D3-4BAF-9337-66608CC52C71}.Debug|x86.Build.0 = Debug|Any CPU
+		{5044BDED-33D3-4BAF-9337-66608CC52C71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5044BDED-33D3-4BAF-9337-66608CC52C71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5044BDED-33D3-4BAF-9337-66608CC52C71}.Release|x86.ActiveCfg = Release|Any CPU
+		{5044BDED-33D3-4BAF-9337-66608CC52C71}.Release|x86.Build.0 = Release|Any CPU
+		{2D22D007-12AD-46A4-9989-E74E6B3E578D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D22D007-12AD-46A4-9989-E74E6B3E578D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D22D007-12AD-46A4-9989-E74E6B3E578D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2D22D007-12AD-46A4-9989-E74E6B3E578D}.Debug|x86.Build.0 = Debug|Any CPU
+		{2D22D007-12AD-46A4-9989-E74E6B3E578D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D22D007-12AD-46A4-9989-E74E6B3E578D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D22D007-12AD-46A4-9989-E74E6B3E578D}.Release|x86.ActiveCfg = Release|Any CPU
+		{2D22D007-12AD-46A4-9989-E74E6B3E578D}.Release|x86.Build.0 = Release|Any CPU
+		{9B902299-2EB3-442F-9ABB-4C54D5400B8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B902299-2EB3-442F-9ABB-4C54D5400B8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B902299-2EB3-442F-9ABB-4C54D5400B8B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9B902299-2EB3-442F-9ABB-4C54D5400B8B}.Debug|x86.Build.0 = Debug|Any CPU
+		{9B902299-2EB3-442F-9ABB-4C54D5400B8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B902299-2EB3-442F-9ABB-4C54D5400B8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B902299-2EB3-442F-9ABB-4C54D5400B8B}.Release|x86.ActiveCfg = Release|Any CPU
+		{9B902299-2EB3-442F-9ABB-4C54D5400B8B}.Release|x86.Build.0 = Release|Any CPU
+		{61E4995E-5CAC-4671-A133-BFB6D6978BC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61E4995E-5CAC-4671-A133-BFB6D6978BC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61E4995E-5CAC-4671-A133-BFB6D6978BC8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{61E4995E-5CAC-4671-A133-BFB6D6978BC8}.Debug|x86.Build.0 = Debug|Any CPU
+		{61E4995E-5CAC-4671-A133-BFB6D6978BC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61E4995E-5CAC-4671-A133-BFB6D6978BC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61E4995E-5CAC-4671-A133-BFB6D6978BC8}.Release|x86.ActiveCfg = Release|Any CPU
+		{61E4995E-5CAC-4671-A133-BFB6D6978BC8}.Release|x86.Build.0 = Release|Any CPU
+		{21CB9A20-8935-4EAF-8AF8-61BB9514728E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21CB9A20-8935-4EAF-8AF8-61BB9514728E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21CB9A20-8935-4EAF-8AF8-61BB9514728E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{21CB9A20-8935-4EAF-8AF8-61BB9514728E}.Debug|x86.Build.0 = Debug|Any CPU
+		{21CB9A20-8935-4EAF-8AF8-61BB9514728E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21CB9A20-8935-4EAF-8AF8-61BB9514728E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21CB9A20-8935-4EAF-8AF8-61BB9514728E}.Release|x86.ActiveCfg = Release|Any CPU
+		{21CB9A20-8935-4EAF-8AF8-61BB9514728E}.Release|x86.Build.0 = Release|Any CPU
+		{3F178A6E-A4BB-4956-86E9-4184D7AC8326}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F178A6E-A4BB-4956-86E9-4184D7AC8326}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F178A6E-A4BB-4956-86E9-4184D7AC8326}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3F178A6E-A4BB-4956-86E9-4184D7AC8326}.Debug|x86.Build.0 = Debug|Any CPU
+		{3F178A6E-A4BB-4956-86E9-4184D7AC8326}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F178A6E-A4BB-4956-86E9-4184D7AC8326}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F178A6E-A4BB-4956-86E9-4184D7AC8326}.Release|x86.ActiveCfg = Release|Any CPU
+		{3F178A6E-A4BB-4956-86E9-4184D7AC8326}.Release|x86.Build.0 = Release|Any CPU
+		{F1EE915F-5679-4B36-8074-2A3982E57ED6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1EE915F-5679-4B36-8074-2A3982E57ED6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1EE915F-5679-4B36-8074-2A3982E57ED6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F1EE915F-5679-4B36-8074-2A3982E57ED6}.Debug|x86.Build.0 = Debug|Any CPU
+		{F1EE915F-5679-4B36-8074-2A3982E57ED6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1EE915F-5679-4B36-8074-2A3982E57ED6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1EE915F-5679-4B36-8074-2A3982E57ED6}.Release|x86.ActiveCfg = Release|Any CPU
+		{F1EE915F-5679-4B36-8074-2A3982E57ED6}.Release|x86.Build.0 = Release|Any CPU
+		{0D854AD0-342D-4C64-813D-17E8DA935288}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D854AD0-342D-4C64-813D-17E8DA935288}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D854AD0-342D-4C64-813D-17E8DA935288}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0D854AD0-342D-4C64-813D-17E8DA935288}.Debug|x86.Build.0 = Debug|Any CPU
+		{0D854AD0-342D-4C64-813D-17E8DA935288}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D854AD0-342D-4C64-813D-17E8DA935288}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D854AD0-342D-4C64-813D-17E8DA935288}.Release|x86.ActiveCfg = Release|Any CPU
+		{0D854AD0-342D-4C64-813D-17E8DA935288}.Release|x86.Build.0 = Release|Any CPU
+		{2F164378-DDDF-4B7C-B2F6-B301403AE5E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F164378-DDDF-4B7C-B2F6-B301403AE5E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F164378-DDDF-4B7C-B2F6-B301403AE5E1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2F164378-DDDF-4B7C-B2F6-B301403AE5E1}.Debug|x86.Build.0 = Debug|Any CPU
+		{2F164378-DDDF-4B7C-B2F6-B301403AE5E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F164378-DDDF-4B7C-B2F6-B301403AE5E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F164378-DDDF-4B7C-B2F6-B301403AE5E1}.Release|x86.ActiveCfg = Release|Any CPU
+		{2F164378-DDDF-4B7C-B2F6-B301403AE5E1}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2D22D007-12AD-46A4-9989-E74E6B3E578D} = {4BE5E9B2-A7F2-4FD3-967F-2B3C8A0BD7CE}
+		{9B902299-2EB3-442F-9ABB-4C54D5400B8B} = {4BE5E9B2-A7F2-4FD3-967F-2B3C8A0BD7CE}
+		{61E4995E-5CAC-4671-A133-BFB6D6978BC8} = {4BE5E9B2-A7F2-4FD3-967F-2B3C8A0BD7CE}
+		{9B107F70-D698-4620-873F-12CD38361ED9} = {F7EAA64B-A956-4292-9444-ED9BF3A783C9}
+		{3F178A6E-A4BB-4956-86E9-4184D7AC8326} = {F7EAA64B-A956-4292-9444-ED9BF3A783C9}
+		{F1EE915F-5679-4B36-8074-2A3982E57ED6} = {75A60C07-7F8D-4BB5-9571-83CA00699C2B}
+		{0D854AD0-342D-4C64-813D-17E8DA935288} = {75A60C07-7F8D-4BB5-9571-83CA00699C2B}
+		{2F164378-DDDF-4B7C-B2F6-B301403AE5E1} = {31A0C26C-B5FA-423E-A993-90F0FF0AE992}
+		{7BD6FCEC-9AC8-4912-B49A-53093A393D80} = {473FAC00-9DAA-4941-B5D8-7F01FB5250C2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EEB22196-F881-4948-99CB-EEDE49A14406}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 14
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://it-visions.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = EFC_Console\\EFC_Console.csproj
+		SccProjectName1 = EFC_Console
+		SccLocalPath1 = EFC_Console
+		SccProjectUniqueName2 = EFC_BO\\EFC_BO.csproj
+		SccProjectName2 = EFC_BO
+		SccLocalPath2 = EFC_BO
+		SccProjectUniqueName3 = EFC_Tools\\EFC_Tools.csproj
+		SccProjectName3 = EFC_Tools
+		SccLocalPath3 = EFC_Tools
+		SccProjectUniqueName4 = EFC_BL\\EFC_BL.csproj
+		SccProjectName4 = EFC_BL
+		SccLocalPath4 = EFC_BL
+		SccProjectUniqueName5 = EFC_DA\\EFC_DA.csproj
+		SccProjectName5 = EFC_DA
+		SccLocalPath5 = EFC_DA
+		SccProjectUniqueName6 = EFC_BO_Step1\\EFC_BO_Step1.csproj
+		SccProjectTopLevelParentUniqueName6 = EFC_WWWings.sln
+		SccProjectName6 = EFC_BO_Step1
+		SccLocalPath6 = EFC_BO_Step1
+		SccProjectUniqueName7 = EFC_DA_Step1\\EFC_DA_Step1.csproj
+		SccProjectTopLevelParentUniqueName7 = EFC_WWWings.sln
+		SccProjectName7 = EFC_DA_Step1
+		SccLocalPath7 = EFC_DA_Step1
+		SccProjectUniqueName8 = EFC_Console_Step1\\EFC_Console_Step1.csproj
+		SccProjectTopLevelParentUniqueName8 = EFC_WWWings.sln
+		SccProjectName8 = EFC_Console_Step1
+		SccLocalPath8 = EFC_Console_Step1
+		SccProjectUniqueName9 = EFC_GUI\\EFC_GUI.csproj
+		SccProjectName9 = EFC_GUI
+		SccLocalPath9 = EFC_GUI
+		SccProjectUniqueName10 = EFC_EntityDeveloper\\EFC_EntityDeveloper.csproj
+		SccProjectTopLevelParentUniqueName10 = EFC_WWWings.sln
+		SccProjectName10 = EFC_EntityDeveloper
+		SccLocalPath10 = EFC_EntityDeveloper
+		SccProjectUniqueName11 = EFC_WWWingsV1_Reverse(NETStandard)\\EFC_WWWingsV1_Reverse(NETStandard).csproj
+		SccProjectTopLevelParentUniqueName11 = EFC_WWWings.sln
+		SccProjectName11 = EFC_WWWingsV1_Reverse(NETStandard)
+		SccLocalPath11 = EFC_WWWingsV1_Reverse(NETStandard)
+		SccProjectUniqueName12 = EFC_WWWingsV1_Reverse(NETFX)\\EFC_WWWingsV1_Reverse(NETFX).csproj
+		SccProjectTopLevelParentUniqueName12 = EFC_WWWings.sln
+		SccProjectName12 = EFC_WWWingsV1_Reverse(NETFX)
+		SccLocalPath12 = EFC_WWWingsV1_Reverse(NETFX)
+		SccProjectUniqueName13 = AdditionalSamples\\EFC_MappingTest\\EFC_MappingScenarios.csproj
+		SccProjectTopLevelParentUniqueName13 = EFC_WWWings.sln
+		SccProjectName13 = AdditionalSamples/EFC_MappingTest
+		SccLocalPath13 = AdditionalSamples\\EFC_MappingTest
+	EndGlobalSection
+EndGlobal

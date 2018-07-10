@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Surname="GO.Flight">
+    <Position X="4.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAEggACAACAgACEAABCBAABAABCAAECAQQIEAAAABA=</HashCode>
+      <FileSurname>Flight.cs</FileSurname>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Surname="Pilot" />
+      <Property Surname="Copilot" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Surname="Buchungen" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Surname="GO.Passagier">
+    <Position X="11.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileSurname>Passagier.cs</FileSurname>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Surname="Buchungen" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Surname="GO.Buchung">
+    <Position X="8" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAACAAAAAAAAAAAAAAAAAACAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileSurname>Buchung.cs</FileSurname>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Surname="Flight" />
+      <Property Surname="Passagier" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Surname="GO.Pilot">
+    <Position X="7" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAgAAAAAAAAAAAAAAAAAAAAAAAABAAYAAgAAA=</HashCode>
+      <FileSurname>Pilot.cs</FileSurname>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Surname="FlightAsPilotSet" />
+      <Property Surname="FlightAsCopilotSet" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Surname="GO.Mitarbeiter">
+    <Position X="9.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACAoAAAAAAAIAAgAAAIAAAA=</HashCode>
+      <FileSurname>Mitarbeiter.cs</FileSurname>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Surname="Vorgesetzter" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Surname="GO.Person">
+    <Position X="11.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAACAAAAAAAAAAgEAAAAgAQAACAAAAAAAAAAAAAACAA=</HashCode>
+      <FileSurname>Person.cs</FileSurname>
+    </TypeIdentifier>
+  </Class>
+  <Font Surname="Segoe UI" Size="8.62" />
+</ClassDiagram>

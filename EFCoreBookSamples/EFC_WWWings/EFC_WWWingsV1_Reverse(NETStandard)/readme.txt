@@ -1,0 +1,2 @@
+﻿install-package Microsoft.EntityFrameworkCore.SqlServer
+Scaffold-DbContext -Connection "Server=.;Database=WWWingsV1;Trusted_Connection=True;MultipleActiveResultSets=True;" -Provider Microsoft.EntityFrameworkCore.SqlServer -force

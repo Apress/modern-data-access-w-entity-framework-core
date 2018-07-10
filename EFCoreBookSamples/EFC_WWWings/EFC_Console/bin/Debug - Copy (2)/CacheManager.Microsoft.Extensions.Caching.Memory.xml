@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CacheManager.Microsoft.Extensions.Caching.Memory</name>
+    </assembly>
+    <members>
+        <member name="T:CacheManager.MicrosoftCachingMemory.MemoryCacheExtensions">
+            <summary>
+            Extensions for the configuration builder specific to Microsoft.Extensions.Caching.Memory cache handle.
+            </summary>
+        </member>
+        <member name="M:CacheManager.MicrosoftCachingMemory.MemoryCacheExtensions.Contains(Microsoft.Extensions.Caching.Memory.MemoryCache,System.Object)">
+            <summary>
+            Extension method to check if a key exists in the given <paramref name="cache"/> instance.
+            </summary>
+            <param name="cache">The cache instance.</param>
+            <param name="key">The key.</param>
+            <returns><c>True</c> if the key exists.</returns>
+        </member>
+        <member name="T:CacheManager.MicrosoftCachingMemory.MemoryCacheHandle`1">
+            <summary>
+            Implementation of a cache handle using <see cref="N:Microsoft.Extensions.Caching.Memory"/>.
+            </summary>
+            <typeparam name="TCacheValue">The type of the cache value.</typeparam>
+        </member>
+        <member name="M:CacheManager.MicrosoftCachingMemory.MemoryCacheHandle`1.#ctor(CacheManager.Core.ICacheManagerConfiguration,CacheManager.Core.CacheHandleConfiguration,CacheManager.Core.Logging.ILoggerFactory)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CacheManager.MicrosoftCachingMemory.MemoryCacheHandle`1"/> class.
+            </summary>
+            <param name="managerConfiguration">The manager configuration.</param>
+            <param name="configuration">The cache handle configuration.</param>
+            <param name="loggerFactory">The logger factory.</param>
+        </member>
+        <member name="M:CacheManager.MicrosoftCachingMemory.MemoryCacheHandle`1.#ctor(CacheManager.Core.ICacheManagerConfiguration,CacheManager.Core.CacheHandleConfiguration,CacheManager.Core.Logging.ILoggerFactory,Microsoft.Extensions.Caching.Memory.MemoryCacheOptions)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CacheManager.MicrosoftCachingMemory.MemoryCacheHandle`1"/> class.
+            </summary>
+            <param name="managerConfiguration">The manager configuration.</param>
+            <param name="configuration">The cache handle configuration.</param>
+            <param name="loggerFactory">The logger factory.</param>
+            <param name="memoryCacheOptions">The vendor specific options.</param>
+        </member>
+        <member name="P:CacheManager.MicrosoftCachingMemory.MemoryCacheHandle`1.Count">
+            <inheritdoc/>
+        </member>
+        <member name="P:CacheManager.MicrosoftCachingMemory.MemoryCacheHandle`1.Logger">
+            <inheritdoc/>
+        </member>
+        <member name="M:CacheManager.MicrosoftCachingMemory.MemoryCacheHandle`1.Clear">
+            <inheritdoc/>
+        </member>
+        <member name="M:CacheManager.MicrosoftCachingMemory.MemoryCacheHandle`1.ClearRegion(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:CacheManager.MicrosoftCachingMemory.MemoryCacheHandle`1.Exists(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:CacheManager.MicrosoftCachingMemory.MemoryCacheHandle`1.Exists(System.String,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:CacheManager.MicrosoftCachingMemory.MemoryCacheHandle`1.GetCacheItemInternal(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:CacheManager.MicrosoftCachingMemory.MemoryCacheHandle`1.GetCacheItemInternal(System.String,System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:CacheManager.MicrosoftCachingMemory.MemoryCacheHandle`1.RemoveInternal(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:CacheManager.MicrosoftCachingMemory.MemoryCacheHandle`1.RemoveInternal(System.String,System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:CacheManager.MicrosoftCachingMemory.MemoryCacheHandle`1.AddInternalPrepared(CacheManager.Core.CacheItem{`0})">
+            <inheritdoc/>
+        </member>
+        <member name="M:CacheManager.MicrosoftCachingMemory.MemoryCacheHandle`1.PutInternalPrepared(CacheManager.Core.CacheItem{`0})">
+            <inheritdoc/>
+        </member>
+        <member name="T:CacheManager.Core.MicrosoftMemoryCachingBuilderExtensions">
+            <summary>
+            Extensions for the configuration builder specific to <see cref="N:Microsoft.Extensions.Caching.Memory"/> based caching.
+            </summary>
+        </member>
+        <member name="M:CacheManager.Core.MicrosoftMemoryCachingBuilderExtensions.WithMicrosoftMemoryCacheHandle(CacheManager.Core.ConfigurationBuilderCachePart,System.Boolean)">
+            <summary>
+            Adds a cache handle using <see cref="T:Microsoft.Extensions.Caching.Memory.MemoryCache"/>.
+            </summary>
+            <param name="part">The builder part.</param>
+            <param name="isBackplaneSource">Set this to true if this cache handle should be the source of the backplane.
+            This setting will be ignored if no backplane is configured.</param>
+            <returns>
+            The builder part.
+            </returns>
+            <returns>The builder part.</returns>
+        </member>
+        <member name="M:CacheManager.Core.MicrosoftMemoryCachingBuilderExtensions.WithMicrosoftMemoryCacheHandle(CacheManager.Core.ConfigurationBuilderCachePart,System.String,System.Boolean)">
+            <summary>
+            Adds a cache handle using <see cref="T:Microsoft.Extensions.Caching.Memory.MemoryCache"/>.
+            </summary>
+            <param name="part">The builder part.</param>
+            <param name="instanceName">The name to be used for the cache handle instance.</param>
+            <param name="isBackplaneSource">Set this to true if this cache handle should be the source of the backplane.
+            This setting will be ignored if no backplane is configured.</param>
+            <returns>
+            The builder part.
+            </returns>
+            <exception cref="T:System.ArgumentNullException">If part is null.</exception>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="instanceName"/> is null.</exception>
+        </member>
+        <member name="M:CacheManager.Core.MicrosoftMemoryCachingBuilderExtensions.WithMicrosoftMemoryCacheHandle(CacheManager.Core.ConfigurationBuilderCachePart,System.String,Microsoft.Extensions.Caching.Memory.MemoryCacheOptions)">
+            <summary>
+            Adds a cache handle using <see cref="T:Microsoft.Extensions.Caching.Memory.MemoryCache"/>.
+            </summary>
+            <param name="part">The builder part.</param>
+            <param name="instanceName">The name to be used for the cache handle instance.</param>
+            <param name="options">The <see cref="T:Microsoft.Extensions.Caching.Memory.MemoryCacheOptions"/> which should be used to initiate or reset this cache.</param>
+            <returns>The builder part.</returns>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="instanceName"/> is null.</exception>
+        </member>
+        <member name="M:CacheManager.Core.MicrosoftMemoryCachingBuilderExtensions.WithMicrosoftMemoryCacheHandle(CacheManager.Core.ConfigurationBuilderCachePart,Microsoft.Extensions.Caching.Memory.MemoryCacheOptions)">
+            <summary>
+            Adds a cache handle using <see cref="T:Microsoft.Extensions.Caching.Memory.MemoryCache"/>.
+            The name of the cache instance will be 'default'.
+            </summary>
+            <param name="part">The builder part.</param>
+            <param name="options">The <see cref="T:Microsoft.Extensions.Caching.Memory.MemoryCacheOptions"/> which should be used to initiate or reset this cache.</param>
+            <returns>The builder part.</returns>
+        </member>
+        <member name="M:CacheManager.Core.MicrosoftMemoryCachingBuilderExtensions.WithMicrosoftMemoryCacheHandle(CacheManager.Core.ConfigurationBuilderCachePart,System.String,System.Boolean,Microsoft.Extensions.Caching.Memory.MemoryCacheOptions)">
+            <summary>
+            Adds a cache handle using <see cref="T:Microsoft.Extensions.Caching.Memory.MemoryCache"/>.
+            </summary>
+            <param name="part">The builder part.</param>
+            <param name="instanceName">The name to be used for the cache handle instance.</param>
+            <param name="isBackplaneSource">Set this to true if this cache handle should be the source of the backplane.
+            This setting will be ignored if no backplane is configured.</param>
+            <param name="options">
+            The <see cref="T:Microsoft.Extensions.Caching.Memory.MemoryCacheOptions"/> which should be used to initiate or reset this cache.
+            If <c>Null</c>, default options will be used.
+            </param>
+            <returns>The builder part.</returns>
+            <exception cref="T:System.ArgumentNullException">If part is null.</exception>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="instanceName"/> is null.</exception>
+        </member>
+    </members>
+</doc>

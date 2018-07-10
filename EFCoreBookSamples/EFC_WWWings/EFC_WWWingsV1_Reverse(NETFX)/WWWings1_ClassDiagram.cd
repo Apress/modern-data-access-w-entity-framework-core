@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="EFC_WWWings1_Reverse_NETFX_.Pilot">
+    <Position X="3.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAACAAAAEAQAAAAAQAAAAAAAAAAAAAACAgAA=</HashCode>
+      <FileName>Pilot.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Person" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Flight" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="EFC_WWWings1_Reverse_NETFX_.Person">
+    <Position X="10.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAiAAACAMAAAAAAAADAIIAAACAAAAAAAAIAA=</HashCode>
+      <FileName>Person.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Employee" />
+      <Property Name="Passenger" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="EFC_WWWings1_Reverse_NETFX_.Passenger">
+    <Position X="8" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAEAAAAAAAAEAAAAAAAAAIAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Passenger.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Person" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="FlightPassenger" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="EFC_WWWings1_Reverse_NETFX_.FlightPassenger">
+    <Position X="4.5" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAMAQAACAAAAAAAAAA=</HashCode>
+      <FileName>FlightPassenger.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="PassengerPerson" />
+      <Property Name="FlightFlightNoNavigation" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="EFC_WWWings1_Reverse_NETFX_.Flight">
+    <Position X="1" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAEAERAQAAAAAggCAAAAAAEAAAAOAACAAQAAAAA=</HashCode>
+      <FileName>Flight.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="PilotPerson" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="FlightPassenger" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="EFC_WWWings1_Reverse_NETFX_.Employee">
+    <Position X="6.75" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AICEAAAAAAAAAAAEAAAAAAAAACAAQAAIAAAAAAAAAQA=</HashCode>
+      <FileName>Employee.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="SupervisorPerson" />
+      <Property Name="Pilot" />
+      <Property Name="Person" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="EFC_WWWings1_Reverse_NETFX_.Airport">
+    <Position X="1" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Airport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="8.25" />
+</ClassDiagram>

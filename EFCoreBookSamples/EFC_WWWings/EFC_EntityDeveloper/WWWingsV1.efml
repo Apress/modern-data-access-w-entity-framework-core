@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<efcore namespace="EFC_EntityDeveloper" p1:Guid="4060e86b-cd7b-43ff-98d7-459fe510a366" xmlns:p1="http://devart.com/schemas/EntityDeveloper/1.0">
+  <class name="$ComplexTypes">
+    <component class="CountFlightByDepartureResult" p1:Guid="ad2a424d-6ee5-4e6d-8c91-1a614241be31">
+      <property name="Expr1" type="Int32" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="a347475d-fad6-4a66-80e1-a0fb5ae4c335">
+        <column name="Expr1" not-null="False" sql-type="int" p1:unicode="False" />
+      </property>
+      <property name="Departure" type="String" p1:ValidateRequired="true" p1:Guid="049b967c-b876-4998-b9c3-d958ba1898c8">
+        <column name="Departure" not-null="True" sql-type="nvarchar(max)" p1:unicode="True" />
+      </property>
+    </component>
+    <component class="GetDepartureeResult" p1:Guid="87369164-948e-45a7-bbe1-97869519ef83">
+      <property name="Departure" type="String" p1:ValidateRequired="true" p1:Guid="ba44a676-f5c5-43fe-810d-4de2d8da3a06">
+        <column name="Departure" not-null="True" sql-type="nvarchar(max)" p1:unicode="True" />
+      </property>
+    </component>
+    <component class="GetFlightAnzahlResult" p1:Guid="7c1df313-e266-4865-adfa-2a62aa5b639c">
+      <property name="column0" type="Int32" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="1e843f24-4262-45e3-ae83-6795dbdb9fbd">
+        <column name="column0" not-null="False" sql-type="int" p1:unicode="False" />
+      </property>
+    </component>
+    <component class="GetFlightsAndTotalCountResult" p1:Guid="c93d11ea-b3ac-4e38-97ee-3485209fb2ed">
+      <property name="column0" type="Int32" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="69fb63f3-bb9b-460b-87f3-c283f7da3ee3">
+        <column name="column0" not-null="False" sql-type="int" p1:unicode="False" />
+      </property>
+    </component>
+    <component class="InsertFlightResult" p1:Guid="d61da7c1-89df-4202-83c0-a6070dd5fd91">
+      <property name="FlightNo" type="Int32" p1:ValidateRequired="true" p1:Guid="40fa3627-1962-4937-a7ed-deaa7d4b1b38">
+        <column name="FlightNo" not-null="True" sql-type="int" p1:unicode="False" />
+      </property>
+      <property name="Departure" type="String" p1:ValidateRequired="true" p1:Guid="411a0517-6923-485c-884c-2ad048f4930e">
+        <column name="Departure" not-null="True" sql-type="nvarchar(max)" p1:unicode="True" />
+      </property>
+      <property name="Destination" type="String" p1:ValidateRequired="true" p1:Guid="4b556924-82c7-454b-9851-42f636c0353f">
+        <column name="Destination" not-null="True" sql-type="nvarchar(max)" p1:unicode="True" />
+      </property>
+      <property name="FlightDate" type="DateTime" p1:ValidateRequired="true" p1:Guid="49e4216a-2e09-49ca-ac58-16ac6faab6d5">
+        <column name="FlightDate" not-null="True" sql-type="datetime" p1:unicode="False" />
+      </property>
+      <property name="NonSmokingFlight" type="Boolean" p1:ValidateRequired="true" p1:Guid="7dc39abc-f7ad-484a-8873-183bbdbfd220">
+        <column name="NonSmokingFlight" not-null="True" sql-type="bit" p1:unicode="False" />
+      </property>
+      <property name="Seats" type="Int16" p1:ValidateRequired="true" p1:Guid="3bc2c67a-e56b-4d14-b25b-67fffec97101">
+        <column name="Seats" not-null="True" sql-type="smallint" p1:unicode="False" />
+      </property>
+      <property name="FreeSeats" type="Int16" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="bf7b8731-e1ff-4ec1-9e59-4eebd232942e">
+        <column name="FreeSeats" not-null="False" sql-type="smallint" p1:unicode="False" />
+      </property>
+      <property name="PilotPersonID" type="Int32" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="d4f0a609-6d08-4ace-b5d3-1f6ea1b89d82">
+        <column name="Pilot_PersonID" not-null="False" sql-type="int" p1:unicode="False" />
+      </property>
+      <property name="Airline" type="String" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="66aba870-f31b-4a30-9327-ca032374402f">
+        <column name="Airline" not-null="False" sql-type="nvarchar(max)" p1:unicode="True" />
+      </property>
+      <property name="Memo" type="String" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="8a474c1c-b4e2-4ca5-946b-b320e5447294">
+        <column name="Memo" not-null="False" sql-type="varchar(max)" p1:unicode="False" />
+      </property>
+    </component>
+    <component class="UpdateFlightResult" p1:Guid="3732f9d9-2dfb-4921-93d5-72ea6d7483ca">
+      <property name="FlightNo" type="Int32" p1:ValidateRequired="true" p1:Guid="6b2bd877-a73f-40a2-82be-274afb4ee7ce">
+        <column name="FlightNo" not-null="True" sql-type="int" p1:unicode="False" />
+      </property>
+      <property name="Departure" type="String" p1:ValidateRequired="true" p1:Guid="45804d0f-3e7a-4a88-bd21-740c5954c53a">
+        <column name="Departure" not-null="True" sql-type="nvarchar(max)" p1:unicode="True" />
+      </property>
+      <property name="Destination" type="String" p1:ValidateRequired="true" p1:Guid="42d97ff3-77fe-4b7d-b4ef-4e332385e959">
+        <column name="Destination" not-null="True" sql-type="nvarchar(max)" p1:unicode="True" />
+      </property>
+      <property name="FlightDate" type="DateTime" p1:ValidateRequired="true" p1:Guid="8cdd6a6c-0e8d-4651-8828-73c755125ebd">
+        <column name="FlightDate" not-null="True" sql-type="datetime" p1:unicode="False" />
+      </property>
+      <property name="NonSmokingFlight" type="Boolean" p1:ValidateRequired="true" p1:Guid="dd75920c-0eca-4d65-a4eb-41d496054290">
+        <column name="NonSmokingFlight" not-null="True" sql-type="bit" p1:unicode="False" />
+      </property>
+      <property name="Seats" type="Int16" p1:ValidateRequired="true" p1:Guid="485132a0-66df-4710-a0b3-5c80f09cd1a2">
+        <column name="Seats" not-null="True" sql-type="smallint" p1:unicode="False" />
+      </property>
+      <property name="FreeSeats" type="Int16" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="5fc3184c-6e58-4e64-9316-f679673e34cb">
+        <column name="FreeSeats" not-null="False" sql-type="smallint" p1:unicode="False" />
+      </property>
+      <property name="PilotPersonID" type="Int32" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="70e147e8-0ca2-4e04-b2a2-b70f22fae9c0">
+        <column name="Pilot_PersonID" not-null="False" sql-type="int" p1:unicode="False" />
+      </property>
+      <property name="Airline" type="String" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="d9ad9f46-0d80-4c0b-be09-3320e7aa5f1e">
+        <column name="Airline" not-null="False" sql-type="nvarchar(max)" p1:unicode="True" />
+      </property>
+      <property name="Memo" type="String" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="0e48b0ce-2850-4e8d-871d-fcee6e72e17e">
+        <column name="Memo" not-null="False" sql-type="varchar(max)" p1:unicode="False" />
+      </property>
+    </component>
+  </class>
+  <class name="Flight" entity-set="Flight" table="Flight" schema="Operation" p1:Guid="c67c4ceb-66f6-4021-9a43-cec75203e545">
+    <id name="FlightNo" type="Int32" p1:ValidateRequired="true" p1:Guid="0f51c3fe-0acd-4f0c-a293-3d84ab109bf2">
+      <column name="FlightNo" not-null="True" precision="10" scale="0" sql-type="int" p1:unicode="False" />
+    </id>
+    <concurrency name="Timestamp" type="VarBinary" p1:nullable="True" value-generated="OnAddOrUpdate" p1:ValidateRequired="false" p1:Guid="980bfdd5-bf20-432d-b4fd-30f50ecb338a">
+      <column name="Timestamp" not-null="False" sql-type="timestamp" p1:unicode="False" />
+    </concurrency>
+    <property name="Airline" type="String" p1:nullable="True" p1:ValidateMaxLength="3" p1:ValidateRequired="false" p1:Guid="699d7d54-f4f6-4289-b9f8-382a0e9ce41c">
+      <column name="Airline" not-null="False" length="3" sql-type="nvarchar" p1:unicode="True" />
+    </property>
+    <property name="Departure" type="String" p1:ValidateMaxLength="30" p1:ValidateRequired="true" p1:Guid="32de0f1f-6807-4f74-829c-d215e025b8c6">
+      <column name="Departure" not-null="True" length="30" sql-type="nvarchar" p1:unicode="True" />
+    </property>
+    <property name="Destination" type="String" p1:ValidateMaxLength="30" p1:ValidateRequired="true" p1:Guid="c4d355ac-1c23-436d-b11a-4025258ca8b1">
+      <column name="Destination" not-null="True" length="30" sql-type="nvarchar" p1:unicode="True" />
+    </property>
+    <property name="FlightDate" type="DateTime" p1:ValidateRequired="true" p1:Guid="dc94631c-7c9b-4701-baf7-b84415c698fd">
+      <column name="FlightDate" not-null="True" sql-type="datetime" p1:unicode="False" />
+    </property>
+    <property name="NonSmokingFlight" type="Boolean" p1:ValidateRequired="true" p1:Guid="881a2cc6-4165-401d-8339-4fbfb0c4b27b">
+      <column name="NonSmokingFlight" not-null="True" sql-type="bit" p1:unicode="False" />
+    </property>
+    <property name="Seats" type="Int16" p1:ValidateRequired="true" p1:Guid="0afcdf4a-e05a-4ba9-93ee-3e43a3d10020">
+      <column name="Seats" not-null="True" precision="5" scale="0" sql-type="smallint" p1:unicode="False" />
+    </property>
+    <property name="FreeSeats" type="Int16" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="016de9e8-be77-412b-973c-75d9390beb68">
+      <column name="FreeSeats" not-null="False" precision="5" scale="0" sql-type="smallint" p1:unicode="False" />
+    </property>
+    <property name="PilotPersonID" type="Int32" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="17dfb9e3-1493-4fe9-9696-47be1031ed4d">
+      <column name="Pilot_PersonID" not-null="False" precision="10" scale="0" sql-type="int" p1:unicode="False" />
+    </property>
+    <property name="Memo" type="String" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="6c1219e3-2973-482e-b0ee-13224315f6ad">
+      <column name="Memo" not-null="False" sql-type="varchar(max)" p1:unicode="False" />
+    </property>
+    <property name="Strikebound" type="Boolean" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="69e9604c-5bbb-40d0-9831-e91324ce819f">
+      <column name="Strikebound" not-null="False" sql-type="bit" p1:unicode="False" />
+    </property>
+    <property name="Utilization" type="Int32" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="45ac1155-78f4-4ec4-89ed-e77a709b2fd2">
+      <column name="`Utilization `" not-null="False" precision="10" scale="0" sql-type="int" p1:unicode="False" />
+    </property>
+  </class>
+  <class name="FlightPassenger" entity-set="FlightPassenger" table="Flight_Passenger" schema="Operation" p1:Guid="701fd3c4-2390-4e5c-aab8-167f322bd38e">
+    <composite-id>
+      <key-property name="FlightFlightNo" type="Int32" p1:ValidateRequired="true" p1:Guid="2e458fec-0cfb-4d3e-a170-8108fee26c42">
+        <column name="Flight_FlightNo" not-null="True" precision="10" scale="0" sql-type="int" p1:unicode="False" />
+      </key-property>
+      <key-property name="PassengerPersonID" type="Int32" p1:ValidateRequired="true" p1:Guid="7f7c05a5-9ccd-4ab2-b82a-390c3bbb5187">
+        <column name="Passenger_PersonID" not-null="True" precision="10" scale="0" sql-type="int" p1:unicode="False" />
+      </key-property>
+    </composite-id>
+  </class>
+  <class name="AllBookings" entity-set="AllBookings" table="AllBookings" schema="Operation" p1:Guid="3fbe4588-d918-44f9-aea9-65aaf4377d7f">
+    <id name="FlightNo" type="Int32" p1:ValidateRequired="true" p1:Guid="24c3e34d-4ce0-49f9-ba1f-5278fc905192">
+      <column name="FlightNo" not-null="True" precision="10" scale="0" sql-type="int" p1:unicode="False" />
+    </id>
+    <property name="Departure" type="String" p1:ValidateMaxLength="30" p1:ValidateRequired="true" p1:Guid="f6f99fb8-7951-4525-9251-cd521bd82c5c">
+      <column name="Departure" not-null="True" length="30" sql-type="nvarchar" p1:unicode="True" />
+    </property>
+    <property name="Destination" type="String" p1:ValidateMaxLength="30" p1:ValidateRequired="true" p1:Guid="80a0e827-03f9-4a38-8ea2-3a7ddac720a5">
+      <column name="Destination" not-null="True" length="30" sql-type="nvarchar" p1:unicode="True" />
+    </property>
+    <property name="FlightDate" type="DateTime" p1:ValidateRequired="true" p1:Guid="1d0afcaa-0288-4024-a1e1-230c3746ae4c">
+      <column name="FlightDate" not-null="True" sql-type="datetime" p1:unicode="False" />
+    </property>
+    <property name="PersonID" type="Int32" p1:ValidateRequired="true" p1:Guid="f5af07d0-61b3-4d8a-a7c2-4cc707901c11">
+      <column name="PersonID" not-null="True" precision="10" scale="0" sql-type="int" p1:unicode="False" />
+    </property>
+  </class>
+  <class name="AllEmployees" entity-set="AllEmployees" table="AllEmployees" schema="Operation" p1:Guid="40803c8a-93f8-4096-b855-7dc873d1ab8b">
+    <id name="PersonID" type="Int32" p1:ValidateRequired="true" p1:Guid="7d79231d-22ff-4af6-af44-83d547b382e6">
+      <column name="PersonID" not-null="True" precision="10" scale="0" sql-type="int" p1:unicode="False" />
+    </id>
+    <property name="HireDate" type="DateTime" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="5279e8fe-e094-48ac-a8a7-6ad6d11a9487">
+      <column name="HireDate" not-null="False" sql-type="datetime" p1:unicode="False" />
+    </property>
+    <property name="EmployeeNo" type="Int32" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="fe4097ac-fb05-4f23-a3e6-efb727c25b54">
+      <column name="EmployeeNo" not-null="False" precision="10" scale="0" sql-type="int" p1:unicode="False" />
+    </property>
+    <property name="SupervisorPersonID" type="Int32" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="51ffa4ad-ff1d-42d1-b073-0b1f8270fecb">
+      <column name="Supervisor_PersonID" not-null="False" precision="10" scale="0" sql-type="int" p1:unicode="False" />
+    </property>
+    <property name="SurName" type="String" p1:ValidateMaxLength="50" p1:ValidateRequired="true" p1:Guid="b9855f6f-ee0e-4591-b6a4-7747fd8371bd">
+      <column name="SurName" not-null="True" length="50" sql-type="nvarchar" p1:unicode="True" />
+    </property>
+    <property name="GivenName" type="String" p1:ValidateMaxLength="50" p1:ValidateRequired="true" p1:Guid="cc7e0cff-cd4f-4895-8ae4-59c4459e43a2">
+      <column name="GivenName" not-null="True" length="50" sql-type="nvarchar" p1:unicode="True" />
+    </property>
+    <property name="Country" type="String" p1:nullable="True" p1:ValidateMaxLength="2" p1:ValidateRequired="false" p1:Guid="bda7ab18-efe2-45e2-8587-cc71aa049ebb">
+      <column name="Country" not-null="False" length="2" sql-type="nvarchar" p1:unicode="True" />
+    </property>
+    <property name="Birthday" type="DateTime" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="4d975484-0ff2-4ac6-a0b4-8eae3cfa11f7">
+      <column name="Birthday" not-null="False" sql-type="datetime" p1:unicode="False" />
+    </property>
+    <property name="Photo" type="VarBinary" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="ab605ee3-91d5-4e89-a9b7-814ee284322a">
+      <column name="Photo" not-null="False" sql-type="varbinary(max)" p1:unicode="False" />
+    </property>
+    <property name="EMail" type="String" p1:nullable="True" p1:ValidateMaxLength="50" p1:ValidateRequired="false" p1:Guid="b723c9e4-f7f3-4ba5-80a2-d4c7af4d5332">
+      <column name="EMail" not-null="False" length="50" sql-type="nvarchar" p1:unicode="True" />
+    </property>
+  </class>
+  <class name="AllPassengers" entity-set="AllPassengers" table="AllPassengers" schema="Operation" p1:Guid="8bd46d6f-1bbe-47e3-b0b4-8cdb69057f75">
+    <id name="PersonID" type="Int32" p1:ValidateRequired="true" p1:Guid="428b18cc-c4fa-4ccc-a7a1-37c19cc207b6">
+      <column name="PersonID" not-null="True" precision="10" scale="0" sql-type="int" p1:unicode="False" />
+    </id>
+    <property name="CustomerSince" type="DateTime" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="38399137-8eab-4a71-b742-28104afe1aea">
+      <column name="CustomerSince" not-null="False" sql-type="datetime" p1:unicode="False" />
+    </property>
+    <property name="PassengerStatus" type="String" p1:nullable="True" p1:ValidateMaxLength="1" p1:ValidateRequired="false" p1:Guid="611aa8f3-9618-4a8f-acbf-811a1116b418">
+      <column name="PassengerStatus" not-null="False" length="1" sql-type="nchar" p1:fixed-length="True" p1:unicode="True" />
+    </property>
+    <property name="SurName" type="String" p1:ValidateMaxLength="50" p1:ValidateRequired="true" p1:Guid="cb0c881a-25e7-475d-a618-aab32decb90b">
+      <column name="SurName" not-null="True" length="50" sql-type="nvarchar" p1:unicode="True" />
+    </property>
+    <property name="GivenName" type="String" p1:ValidateMaxLength="50" p1:ValidateRequired="true" p1:Guid="f42b19a7-eab8-4c69-8474-82639c26b532">
+      <column name="GivenName" not-null="True" length="50" sql-type="nvarchar" p1:unicode="True" />
+    </property>
+    <property name="Country" type="String" p1:nullable="True" p1:ValidateMaxLength="2" p1:ValidateRequired="false" p1:Guid="e8212b17-eff4-431f-b3a0-9ba148bfe1ef">
+      <column name="Country" not-null="False" length="2" sql-type="nvarchar" p1:unicode="True" />
+    </property>
+    <property name="Birthday" type="DateTime" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="53c727ff-5db5-45ed-bc65-b779549faba2">
+      <column name="Birthday" not-null="False" sql-type="datetime" p1:unicode="False" />
+    </property>
+    <property name="Photo" type="VarBinary" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="cafa57b0-cedf-450f-aae2-c225b98a2148">
+      <column name="Photo" not-null="False" sql-type="varbinary(max)" p1:unicode="False" />
+    </property>
+    <property name="EMail" type="String" p1:nullable="True" p1:ValidateMaxLength="50" p1:ValidateRequired="false" p1:Guid="f7e5b461-6a26-482a-8d89-00a0478b6e6b">
+      <column name="EMail" not-null="False" length="50" sql-type="nvarchar" p1:unicode="True" />
+    </property>
+  </class>
+  <class name="FlightsFromRome" entity-set="FlightsFromRome" table="FlightsFromRome" schema="Operation" p1:Guid="c28f5af8-1528-47c1-a541-a2f6dd95a96e">
+    <id name="FlightNo" type="Int32" p1:ValidateRequired="true" p1:Guid="561d98fd-fe1e-44e2-99b4-4d1ce26b1054">
+      <column name="FlightNo" not-null="True" precision="10" scale="0" sql-type="int" p1:unicode="False" />
+    </id>
+    <property name="Departure" type="String" p1:ValidateMaxLength="30" p1:ValidateRequired="true" p1:Guid="f80bc9bb-3812-49a3-99b9-8a2fea4fa808">
+      <column name="Departure" not-null="True" length="30" sql-type="nvarchar" p1:unicode="True" />
+    </property>
+    <property name="FlightDate" type="DateTime" p1:ValidateRequired="true" p1:Guid="9e5a413e-269a-4b4a-924e-f16a80b7f39f">
+      <column name="FlightDate" not-null="True" sql-type="datetime" p1:unicode="False" />
+    </property>
+    <property name="Destination" type="String" p1:ValidateMaxLength="30" p1:ValidateRequired="true" p1:Guid="5a759996-63d1-49c7-9ea4-a24bf4cacde0">
+      <column name="Destination" not-null="True" length="30" sql-type="nvarchar" p1:unicode="True" />
+    </property>
+    <property name="NonSmokingFlight" type="Boolean" p1:ValidateRequired="true" p1:Guid="8c53f96c-ab12-435b-b020-d4fc229fa0ee">
+      <column name="NonSmokingFlight" not-null="True" sql-type="bit" p1:unicode="False" />
+    </property>
+    <property name="Seats" type="Int16" p1:ValidateRequired="true" p1:Guid="77f38149-abb1-4966-b973-333a5c6b0e24">
+      <column name="Seats" not-null="True" precision="5" scale="0" sql-type="smallint" p1:unicode="False" />
+    </property>
+    <property name="Memo" type="String" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="93d926c3-cdce-488a-987a-13ac9511b75f">
+      <column name="Memo" not-null="False" sql-type="varchar(max)" p1:unicode="False" />
+    </property>
+    <property name="FreeSeats" type="Int16" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="2ee6bf4e-d295-4f3d-83d2-d3738c9511e9">
+      <column name="FreeSeats" not-null="False" precision="5" scale="0" sql-type="smallint" p1:unicode="False" />
+    </property>
+    <property name="PilotPersonID" type="Int32" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="b30678ed-04d0-49ea-ac3e-79a4dd282860">
+      <column name="Pilot_PersonID" not-null="False" precision="10" scale="0" sql-type="int" p1:unicode="False" />
+    </property>
+  </class>
+  <class name="Employee" entity-set="Employee" table="Employee" schema="People" p1:Guid="7a05319f-4ff9-43cd-8444-ab1c99cc3307">
+    <id name="PersonID" type="Int32" p1:ValidateRequired="true" p1:Guid="605770c5-2130-4f44-91ce-ac4dd9b33506">
+      <column name="PersonID" not-null="True" precision="10" scale="0" sql-type="int" p1:unicode="False" />
+    </id>
+    <property name="EmployeeNo" type="Int32" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="efc9ab7d-a619-4aac-a0e0-49334f3697fb">
+      <column name="EmployeeNo" not-null="False" precision="10" scale="0" sql-type="int" p1:unicode="False" />
+    </property>
+    <property name="HireDate" type="DateTime" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="b5dc2ac0-e2ae-47b6-b0c5-0ce2c912eedc">
+      <column name="HireDate" not-null="False" sql-type="datetime" p1:unicode="False" />
+    </property>
+    <property name="SupervisorPersonID" type="Int32" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="32e24518-b3f2-4abb-bcce-94650b320854">
+      <column name="Supervisor_PersonID" not-null="False" precision="10" scale="0" sql-type="int" p1:unicode="False" />
+    </property>
+  </class>
+  <class name="Passenger" entity-set="Passenger" table="Passenger" schema="People" p1:Guid="34b61ad7-f65e-49fa-a744-c334e278e89a">
+    <id name="PersonID" type="Int32" p1:ValidateRequired="true" p1:Guid="8ffe7721-7f79-4047-ac76-126ba58eda62">
+      <column name="PersonID" not-null="True" precision="10" scale="0" sql-type="int" p1:unicode="False" />
+    </id>
+    <property name="CustomerSince" type="DateTime" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="615797b3-3458-4d40-b0e9-be47f52c4e7b">
+      <column name="CustomerSince" not-null="False" sql-type="datetime" p1:unicode="False" />
+    </property>
+    <property name="PassengerStatus" type="String" p1:nullable="True" p1:ValidateMaxLength="1" p1:ValidateRequired="false" p1:Guid="ee7e6600-27ac-4a9a-978b-f1cd45bf99fa">
+      <column name="PassengerStatus" not-null="False" length="1" sql-type="nchar" p1:fixed-length="True" p1:unicode="True" />
+    </property>
+  </class>
+  <class name="Person" entity-set="Person" table="Person" schema="People" p1:Guid="abb1431b-65e8-40d4-b9ad-2d116735f87e">
+    <id name="PersonID" type="Int32" value-generated="OnAdd" p1:ValidateRequired="true" p1:Guid="72597999-341f-4ca9-8227-e4e9b2b669b4">
+      <column name="PersonID" not-null="True" precision="10" scale="0" sql-type="int" p1:unicode="False" />
+    </id>
+    <property name="Surname" type="String" p1:ValidateMaxLength="50" p1:ValidateRequired="true" p1:Guid="88009c72-a2e3-4355-bf0d-8cd96d74f895">
+      <column name="Surname" not-null="True" length="50" sql-type="nvarchar" p1:unicode="True" />
+    </property>
+    <property name="GivenName" type="String" p1:ValidateMaxLength="50" p1:ValidateRequired="true" p1:Guid="51efdadf-3820-4280-97dd-e5b437168b9f">
+      <column name="GivenName" not-null="True" length="50" sql-type="nvarchar" p1:unicode="True" />
+    </property>
+    <property name="Country" type="String" p1:nullable="True" p1:ValidateMaxLength="2" p1:ValidateRequired="false" p1:Guid="b5931ade-2e1d-434a-b9e5-d22715ec1084">
+      <column name="Country" not-null="False" length="2" sql-type="nvarchar" p1:unicode="True" />
+    </property>
+    <property name="Birthday" type="DateTime" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="6a130e39-954d-4361-b033-7b24265e902d">
+      <column name="Birthday" not-null="False" sql-type="datetime" p1:unicode="False" />
+    </property>
+    <property name="Photo" type="VarBinary" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="de105908-4b78-42cb-919e-fbfb781c982b">
+      <column name="Photo" not-null="False" sql-type="varbinary(max)" p1:unicode="False" />
+    </property>
+    <property name="EMail" type="String" p1:nullable="True" p1:ValidateMaxLength="50" p1:ValidateRequired="false" p1:Guid="f4ec8510-8164-4137-a25f-f731f7917332">
+      <column name="EMail" not-null="False" length="50" sql-type="nvarchar" p1:unicode="True" />
+    </property>
+    <property name="City" type="String" p1:nullable="True" p1:ValidateMaxLength="30" p1:ValidateRequired="false" p1:Guid="3ea87cf0-421e-402c-b047-8b528527554d">
+      <column name="City" not-null="False" length="30" sql-type="nvarchar" p1:unicode="True" />
+    </property>
+    <property name="Memo" type="String" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="479491fe-3697-46b3-82ef-272988e83bba">
+      <column name="Memo" not-null="False" sql-type="varchar(max)" p1:unicode="False" />
+    </property>
+  </class>
+  <class name="Pilot" entity-set="Pilot" table="Pilot" schema="People" p1:Guid="25359f94-ec29-46b4-a8fb-293850f3db5c">
+    <id name="PersonID" type="Int32" p1:ValidateRequired="true" p1:Guid="001bc2e2-23c1-4c02-9998-ab4d55f1363a">
+      <column name="PersonID" not-null="True" precision="10" scale="0" sql-type="int" p1:unicode="False" />
+    </id>
+    <property name="LicenseDate" type="DateTime" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="aa65dbac-9bc4-4ad2-ab9e-4d0845b58585">
+      <column name="LicenseDate" not-null="False" sql-type="datetime" p1:unicode="False" />
+    </property>
+    <property name="Flightscheintyp" type="String" p1:nullable="True" p1:ValidateMaxLength="1" p1:ValidateRequired="false" p1:Guid="0aa185b1-e3e9-48ec-b563-fa2dc52863a3">
+      <column name="Flightscheintyp" not-null="False" length="1" sql-type="nchar" p1:fixed-length="True" p1:unicode="True" />
+    </property>
+    <property name="FlightHours" type="Int32" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="d26266a9-fec4-4f4b-b023-945df14a9c8d">
+      <column name="FlightHours" not-null="False" precision="10" scale="0" sql-type="int" p1:unicode="False" />
+    </property>
+    <property name="FlightSchool" type="String" p1:nullable="True" p1:ValidateMaxLength="50" p1:ValidateRequired="false" p1:Guid="1f41cb64-9c68-40a5-b5fc-01ecff8a7b3b">
+      <column name="FlightSchool" not-null="False" length="50" sql-type="nvarchar" p1:unicode="True" />
+    </property>
+  </class>
+  <class name="Airport" entity-set="Airport" table="Airport" schema="Properties" p1:Guid="c5ed4aea-a999-476c-9a70-7caefb707360">
+    <id name="Surname" type="String" p1:ValidateMaxLength="30" p1:ValidateRequired="true" p1:Guid="e39aeef7-4169-4d89-ac32-c960d885ec0e">
+      <column name="Surname" not-null="True" length="30" sql-type="nchar" p1:fixed-length="True" p1:unicode="True" />
+    </id>
+    <property name="Typ" type="Int32" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="a3560c66-9fa9-4f02-b18b-c383c68232bf">
+      <column name="Typ" not-null="False" precision="10" scale="0" sql-type="int" p1:unicode="False" />
+    </property>
+  </class>
+  <associations>
+    <association name="Pilot_Flight" cardinality="OneToMany" p1:Guid="accb8f05-4a51-4fba-a947-4541ad14cbe0">
+      <end1 multiplicity="ZeroOrOne" name="Pilot" class="Flight" relation-class="Pilot" constrained="True" p1:Guid="16b3208f-11ad-4321-8e13-e0625f37a3ad">
+        <property name="PersonID" />
+      </end1>
+      <end2 multiplicity="Many" name="Flights" class="Pilot" relation-class="Flight" p1:Guid="e2c834a9-cac3-4f1a-aaa1-eebe8413d6a7">
+        <property name="PilotPersonID" />
+      </end2>
+    </association>
+    <association name="Flight_FlightPassenger" cardinality="OneToMany" p1:Guid="2fed52de-5a02-4aee-bd1e-162c31feba56">
+      <end1 multiplicity="One" name="Flight" class="FlightPassenger" relation-class="Flight" constrained="True" p1:Guid="9cb004ab-0118-4f43-994e-8f097ca24780">
+        <property name="FlightNo" />
+      </end1>
+      <end2 multiplicity="Many" name="FlightPassengers" class="Flight" relation-class="FlightPassenger" p1:Guid="8637aba6-2961-4a80-8fd6-80e8c4d9baa1">
+        <property name="FlightFlightNo" />
+      </end2>
+    </association>
+    <association name="Passenger_FlightPassenger" cardinality="OneToMany" p1:Guid="d8e1197c-e08c-4a48-9041-aa8b7a410654">
+      <end1 multiplicity="One" name="Passenger" class="FlightPassenger" relation-class="Passenger" constrained="True" p1:Guid="0911a971-8e65-43cb-a11a-51deb631038b">
+        <property name="PersonID" />
+      </end1>
+      <end2 multiplicity="Many" name="FlightPassengers" class="Passenger" relation-class="FlightPassenger" p1:Guid="f965625f-c9db-408f-ab83-946a1470df1b">
+        <property name="PassengerPersonID" />
+      </end2>
+    </association>
+    <association name="Employee_Employee" cardinality="OneToMany" p1:Guid="d7b209f4-4c5f-489a-9564-205682d46d92">
+      <end1 multiplicity="ZeroOrOne" name="Employee_SupervisorPersonID" class="Employee" relation-class="Employee" constrained="True" p1:Guid="ea6d8755-6f2e-4b2d-a51c-924145aa3de0">
+        <property name="PersonID" />
+      </end1>
+      <end2 multiplicity="Many" name="Employees_SupervisorPersonID" class="Employee" relation-class="Employee" p1:Guid="08f09c3b-8f6e-454d-a6b0-39a5ef7c5c0a">
+        <property name="SupervisorPersonID" />
+      </end2>
+    </association>
+    <association name="Person_Employee" cardinality="OneToOne" p1:Guid="94476d9d-b6b4-4985-a17c-bd473b2cc3f9">
+      <end1 multiplicity="One" name="Person" class="Employee" relation-class="Person" constrained="True" p1:Guid="cf83440b-b75d-4b37-a0cf-86423bf310a4">
+        <property name="PersonID" />
+      </end1>
+      <end2 multiplicity="One" name="Employee" class="Person" relation-class="Employee" constrained="False" p1:Guid="c3b23ebc-e83d-4475-ad45-befea6874543">
+        <property name="PersonID" />
+      </end2>
+    </association>
+    <association name="Person_Passenger" cardinality="OneToOne" p1:Guid="d9be41c4-c64a-4f80-aa3c-1c76a15afa79">
+      <end1 multiplicity="One" name="Person" class="Passenger" relation-class="Person" constrained="True" p1:Guid="81cf7c36-c485-434b-ab7b-045a8e27b90c">
+        <property name="PersonID" />
+      </end1>
+      <end2 multiplicity="One" name="Passenger" class="Person" relation-class="Passenger" constrained="False" p1:Guid="f96b38b0-116a-419d-be2d-af70cf49dd72">
+        <property name="PersonID" />
+      </end2>
+    </association>
+    <association name="Employee_Pilot" cardinality="OneToOne" p1:Guid="80ef2102-adda-4fd7-b021-69f53344e310">
+      <end1 multiplicity="One" name="Employee" class="Pilot" relation-class="Employee" constrained="True" p1:Guid="d75005ec-37db-4bff-be2e-7f47b159e8a1">
+        <property name="PersonID" />
+      </end1>
+      <end2 multiplicity="One" name="Pilot" class="Employee" relation-class="Pilot" constrained="False" p1:Guid="c868d429-4f44-4a92-9790-48ccf631fc70">
+        <property name="PersonID" />
+      </end2>
+    </association>
+  </associations>
+  <method name="ADMINSkinkLog" p1:procedure="Admin.ADMIN_SkinkLog" p1:Guid="66216f89-ad84-4e43-a82e-5a8b8f5cb1ec" />
+  <method name="CountFlightByDeparture" p1:procedure="Operation.CountFlightByDeparture" p1:Guid="b2214529-bae6-4b99-a5bf-c0ffff65ff89">
+    <return class="CountFlightByDepartureResult" />
+    <parameter name="Ort" type="String" />
+  </method>
+  <method name="DeleteFlight" p1:procedure="Operation.DeleteFlight" p1:Guid="a3767889-395e-46f1-b7d9-9e14f8920cfe">
+    <parameter name="Original_FlightNo" type="Int32" />
+    <parameter name="Original_Departure" type="String" />
+    <parameter name="Original_Destination" type="String" />
+    <parameter name="Original_FlightDate" type="DateTime" />
+    <parameter name="Original_NonSmokingFlight" type="Boolean" />
+    <parameter name="Original_Seats" type="Int16" />
+    <parameter name="IsNull_FreeSeats" type="Int32" />
+    <parameter name="Original_FreeSeats" type="Int16" />
+    <parameter name="IsNull_Pilot_PersonID" type="Int32" />
+    <parameter name="Original_Pilot_PersonID" type="Int32" />
+    <parameter name="IsNull_Airline" type="Int32" />
+    <parameter name="Original_Airline" type="DateTime" />
+  </method>
+  <method name="GetAllBookings" p1:procedure="Operation.GetAllBookings" p1:Guid="053f05d4-c3f1-44dc-9c5f-da1284286d02">
+    <return class="AllBookings" />
+  </method>
+  <method name="GetDeparturee" p1:procedure="Operation.GetDeparturee" p1:Guid="339d6749-4cd7-4299-bdbb-38694edc30c3">
+    <return class="GetDepartureeResult" />
+  </method>
+  <method name="GetFlight" p1:procedure="Operation.GetFlight" p1:Guid="58a1696a-996d-4bd6-85d4-79bb93597313">
+    <return class="Flight" />
+    <parameter name="FlightNo" type="Int32" />
+  </method>
+  <method name="GetFlightAnzahl" p1:procedure="Operation.GetFlightAnzahl" p1:Guid="860400d0-e5a9-400d-bdde-6dabdd6effc4">
+    <return class="GetFlightAnzahlResult" />
+  </method>
+  <method name="GetFlights" p1:procedure="Operation.GetFlights" p1:Guid="aba69f08-1fcd-4b66-960b-5d7bdefc9ea9">
+    <return class="Flight" />
+  </method>
+  <method name="GetFlightsAndTotalCount" p1:procedure="Operation.GetFlightsAndTotalCount" p1:Guid="95bab3fc-ef6b-4e67-9574-8e789fc111af">
+    <return class="Flight;GetFlightsAndTotalCountResult" />
+  </method>
+  <method name="GetFlightsFromSP" p1:procedure="Operation.GetFlightsFromSP" p1:Guid="81da3e5a-d1a7-4edb-8c0c-3eeb4338e300">
+    <return class="Flight" />
+    <parameter name="Departure" type="String" />
+  </method>
+  <method name="GetRoute" p1:procedure="Operation.GetRoute" p1:Guid="e49dd7b3-f63d-4ef8-b9ac-ec82c14a010a">
+    <return class="Flight" />
+    <parameter name="von" type="String" />
+    <parameter name="nach" type="String" />
+  </method>
+  <method name="InsertFlight" p1:procedure="Operation.InsertFlight" p1:Guid="70a220ef-a8a8-4e56-b1a6-9f5cd976c91d">
+    <return class="InsertFlightResult" />
+    <parameter name="FlightNo" type="Int32" />
+    <parameter name="Departure" type="String" />
+    <parameter name="Destination" type="String" />
+    <parameter name="FlightDate" type="DateTime" />
+    <parameter name="NonSmokingFlight" type="Boolean" />
+    <parameter name="Seats" type="Int16" />
+    <parameter name="FreeSeats" type="Int16" />
+    <parameter name="Pilot_PersonID" type="Int32" />
+    <parameter name="Airline" type="DateTime" />
+    <parameter name="Memo" type="String" />
+  </method>
+  <method name="UpdateFlight" p1:procedure="Operation.UpdateFlight" p1:Guid="48b46add-6cf9-43f5-ae30-3fb37afd6104">
+    <return class="UpdateFlightResult" />
+    <parameter name="FlightNo" type="Int32" />
+    <parameter name="Departure" type="String" />
+    <parameter name="Destination" type="String" />
+    <parameter name="FlightDate" type="DateTime" />
+    <parameter name="NonSmokingFlight" type="Boolean" />
+    <parameter name="Seats" type="Int16" />
+    <parameter name="FreeSeats" type="Int16" />
+    <parameter name="Pilot_PersonID" type="Int32" />
+    <parameter name="Airline" type="DateTime" />
+    <parameter name="Memo" type="String" />
+    <parameter name="Original_FlightNo" type="Int32" />
+    <parameter name="Original_Departure" type="String" />
+    <parameter name="Original_Destination" type="String" />
+    <parameter name="Original_FlightDate" type="DateTime" />
+    <parameter name="Original_NonSmokingFlight" type="Boolean" />
+    <parameter name="Original_Seats" type="Int16" />
+    <parameter name="Original_FreeSeats" type="Int16" />
+    <parameter name="Original_Pilot_PersonID" type="Int32" />
+    <parameter name="Original_Airline" type="DateTime" />
+  </method>
+  <method name="GetFlightsFromTVF" p1:procedure="Operation.GetFlightsFromTVF" p1:table-valued-function="true" p1:Guid="910a5627-3072-44db-85fc-7acc2e1fd84a">
+    <return class="Flight" />
+    <parameter name="Departure" type="String" />
+  </method>
+</efcore>

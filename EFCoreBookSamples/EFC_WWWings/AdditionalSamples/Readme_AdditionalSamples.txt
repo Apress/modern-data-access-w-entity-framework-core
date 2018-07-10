@@ -1,0 +1,1 @@
+Die Projekte in dem Solution Folder "Weitere" eigenst‰ndige Projekte mit bestimmten Aspekten, die sich nicht im Hauptbeispiel elegant unterbringen lieﬂen. Diese weiteren Projekten spielen aber z.T. auch im Szenario "World Wide Wings".

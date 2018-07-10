@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="EFC_UWP_SQLite.Task">
+    <Position X="2.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAEAAAAAAAAAAAAgBAAABAAAAAAAAAAA=</HashCode>
+      <FileName>EntityClasses.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Details" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="EFC_UWP_SQLite.TaskDetail">
+    <Position X="5.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAAAgAAAAAAEAACAAAAAA=</HashCode>
+      <FileName>EntityClasses.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Task" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="8.25" />
+</ClassDiagram>

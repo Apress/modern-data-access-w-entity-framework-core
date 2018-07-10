@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.EntityFrameworkCore.Attributes</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.EntityFrameworkCore.OwnedAttribute">
+            <summary>
+                Marks a type as owned. All references to this type will be configured as owned entity types.
+            </summary>
+        </member>
+    </members>
+</doc>

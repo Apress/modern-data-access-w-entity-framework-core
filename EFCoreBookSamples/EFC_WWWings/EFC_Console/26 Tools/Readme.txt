@@ -1,0 +1,1 @@
+﻿see also: solution folder "26 Tools"

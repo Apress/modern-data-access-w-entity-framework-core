@@ -1,0 +1,4 @@
+﻿BO.Airline;Address;System.String
+#BO.Airline;FoundingYear;System.Nullable`1[System.Int32]
+#BO.Airline;Bunkrupt;System.Nullable`1[System.Boolean]
+BO.AircraftType;Role;System.String

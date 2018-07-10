@@ -1,0 +1,3 @@
+-- 2018 07 04: Script renamed to WWWingsv2.SQL for consitency
+-- please use WWWingsv2.SQL
+-- Thanks!
